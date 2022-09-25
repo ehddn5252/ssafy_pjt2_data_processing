@@ -74,8 +74,10 @@ if __name__ == "__main__":
             pitcher_vals = ('pitchers', pitcher_id, date, game_uid, season, weather, batter_id, event_index,
                             event_type, player_main_position, batter_hand, rbi, strikes, balls, outs, inning,
                             is_top_inning)
-            batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
-            pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
+            batter_player_type = "batters"
+            pitcher_player_type = "pitchers"
+            batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{batter_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
+            pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{pitcher_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
 
             dml_instance.execute_insert_sql(batter_sql2, batter_vals)
-            # dml_instance.execute_insert_sql(pitcher_sql2, pitcher_vals)
+            dml_instance.execute_insert_sql(pitcher_sql2, pitcher_vals)
