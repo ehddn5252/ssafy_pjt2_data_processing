@@ -49,8 +49,10 @@ if __name__ == "__main__":
         date = raw_data['gameData']['datetime']['officialDate']
         game_uid = raw_data['gameData']['game']['pk']
         season = raw_data['gameData']['game']['season']
-        weather = raw_data['gameData']['weather']['condition']
-
+        try:
+            weather = raw_data['gameData']['weather']['condition']
+        except:
+            weather = "Unknown"
         batter_sql = "insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
 
         pitcher_sql = "insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"

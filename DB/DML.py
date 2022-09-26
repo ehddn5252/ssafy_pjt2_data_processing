@@ -32,6 +32,11 @@ class DML:
         cur.execute(sql,vars)
         self.conn.commit()
 
+    def execute_insert_many_sql(self, sql,vars):
+        cur = self.conn.cursor()
+        cur.executemany(sql,vars)
+        self.conn.commit()
+
 
 
     def get_from_sql(self,sql):
