@@ -1,7 +1,9 @@
 from DB.DML import DML
-from typing import Tuple, Dict
+from typing import Tuple, Dict, List
 import json
 from tqdm import tqdm
+import time, datetime
+from datetime import datetime
 from pprint import pprint
 
 # raw_data는 튜플형태
@@ -28,18 +30,20 @@ from pprint import pprint
 if __name__ == "__main__":
     dml_instance = DML()
     raw_data: Tuple = None
-
-    game_uids: Tuple = dml_instance.get_select_from_where(column_names=["game_uid"], table_name="game_raw_datas")
-
+    condition = f" game_uid not in (select distinct(game_uid) from events)"
+    game_uids: Tuple = dml_instance.get_select_from_where(column_names=["game_uid"], table_name="game_raw_datas", condition=condition, print_sql=True)
     # 1초에 10 iter
-    # 게임
+    # 게임 1100개까지 넣음(6시간)
+
     for count, game_uid in tqdm(enumerate(game_uids)):
+
         condition = f"game_uid={game_uid[0]}"
         raw_data: Tuple = dml_instance.get_select_from_where(column_names=["game_raw_data"],
                                                              table_name="game_raw_datas",
                                                              condition=condition)
-
         raw_data: dict = json.loads(raw_data[0][0])
+
+
         all_plays_len = len(raw_data['liveData']['plays']['allPlays'])
 
         date = raw_data['gameData']['datetime']['officialDate']
@@ -50,7 +54,8 @@ if __name__ == "__main__":
         batter_sql = "insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
 
         pitcher_sql = "insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-
+        batter_val_list: List = []
+        pitcher_val_list: List = []
         all_plays = raw_data['liveData']['plays']['allPlays']
         for index in range(all_plays_len):
             batter_id = all_plays[index]['matchup']['batter']['id']
@@ -67,17 +72,18 @@ if __name__ == "__main__":
             inning = all_plays[index]['about']['inning']
             is_top_inning = all_plays[index]['about']['isTopInning']
 
-            batter_vals = ('batters', batter_id, date, game_uid, season, weather, pitcher_id, event_index,
-                           event_type, player_main_position, pitcher_hand, rbi, strikes, balls, outs, inning,
-                           is_top_inning)
+            batter_val_list.append(('batters', batter_id, date, game_uid, season, weather, pitcher_id, event_index,
+                                    event_type, player_main_position, pitcher_hand, rbi, strikes, balls, outs, inning,
+                                    is_top_inning))
 
-            pitcher_vals = ('pitchers', pitcher_id, date, game_uid, season, weather, batter_id, event_index,
-                            event_type, player_main_position, batter_hand, rbi, strikes, balls, outs, inning,
-                            is_top_inning)
+            pitcher_val_list.append(('pitchers', pitcher_id, date, game_uid, season, weather, batter_id, event_index,
+                                     event_type, player_main_position, batter_hand, rbi, strikes, balls, outs, inning,
+                                     is_top_inning))
             batter_player_type = "batters"
             pitcher_player_type = "pitchers"
-            batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{batter_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
-            pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{pitcher_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
+            # 개별
+            # batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{batter_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
+            # pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{pitcher_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
 
-            dml_instance.execute_insert_sql(batter_sql2, batter_vals)
-            dml_instance.execute_insert_sql(pitcher_sql2, pitcher_vals)
+        dml_instance.execute_insert_many_sql(batter_sql, batter_val_list)
+        dml_instance.execute_insert_many_sql(pitcher_sql, pitcher_val_list)
