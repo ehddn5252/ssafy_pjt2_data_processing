@@ -26,11 +26,17 @@ class DML:
     #     self.conn.close()
     #     return rows
 
-
-    def execute_insert_sql(self, sql,vars):
+    def execute_insert_sql(self, sql, vars):
         cur = self.conn.cursor()
-        cur.execute(sql,vars)
+        cur.execute(sql, vars)
         self.conn.commit()
+
+    def execute_fetch_sql(self, sql, vars):
+        cur = self.conn.cursor()
+        cur.execute(sql, vars)
+        fetched = cur.fetchall()
+        print(fetched)
+        return fetched
 
     def execute_insert_many_sql(self, sql,vars):
         cur = self.conn.cursor()
