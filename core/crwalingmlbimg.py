@@ -132,6 +132,7 @@ class CrawlingMlbImg:
                 img_url = self.get_image_url(image_xpath)
                 uid = preprocessed_name.split("-")[-1]
                 condition = f"uid = {uid}"
+                print(condition )
                 dml_instance.update_from_where(table_name=table_name, field_name=field_name, data=img_url,
                                                condition=condition)
                 Logger.save_log_to_file(f"success_{i} {name_slugs[i]}", log_file_name)
