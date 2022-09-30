@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec4b241-de7b-4f19-b4b5-25aa320a5507" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/API 모음" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/3_create_new_event_players.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/3_create_new_event_players_tmp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/6_get_today.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/20220930_error_file_name" beforeDir="false" afterPath="$PROJECT_DIR$/logs/20220930_error_file_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/4_insert_into_pitchers.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/4_insert_into_pitchers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/3_update_event_pitchers.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/4_update_event_pitchers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/4_insert_into_pitchers.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/5_insert_into_pitchers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +21,11 @@
     <session id="-1745480204">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -28,40 +34,49 @@
           <entry key="20220927_save_file_name" value="1" />
           <entry key="20220928_error_file_name" value="1" />
           <entry key="20220928_save_file_name" value="1" />
+          <entry key="20220930_error_file_name" value="2" />
+          <entry key="20220930_save_file_name" value="1" />
+          <entry key="API 모음" value="2" />
           <entry key="md" value="3" />
-          <entry key="py" value="94" />
+          <entry key="py" value="110" />
           <entry key="raw_data_insert" value="9" />
+          <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="103" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="119" />
+          <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="104" />
-          <entry key="py" value="8006" />
+          <entry key="API 모음" value="39" />
+          <entry key="dummy" value="108" />
+          <entry key="py" value="9651" />
           <entry key="raw_data_insert" value="1" />
+          <entry key="sql" value="232" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="104" />
-          <entry key="Python" value="8007" />
+          <entry key="Markdown" value="39" />
+          <entry key="PLAIN_TEXT" value="108" />
+          <entry key="Python" value="9652" />
+          <entry key="SQL" value="232" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/picture_crwaler.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/5_insert_into_pitchers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="23">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -70,39 +85,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/crwalingmlbimg.py">
+        <entry file="file://$PROJECT_DIR$/scripts/6_get_today.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="140" column="83" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="83" />
+            <state relative-caret-position="368">
+              <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logger/logger.py">
+        <entry file="file://$PROJECT_DIR$/DB/DML.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="694">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/info_data.py">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/cursors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3031">
-              <caret line="224" column="104" selection-start-line="224" selection-start-column="104" selection-end-line="224" selection-end-column="104" />
+            <state relative-caret-position="142">
+              <caret line="309" selection-start-line="309" selection-end-line="309" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/4_insert_into_pitchers.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+            <state relative-caret-position="267">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/API 모음">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-line="13" selection-end-column="57" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/not_used_3_insert_into_new_event_pitchers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+                <marker date="1664502188102" expanded="true" signature="299:1199" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,6 +163,7 @@
       <find>weather</find>
       <find>% s</find>
       <find>left_t</find>
+      <find>home_score</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,20 +188,29 @@
         <option value="$PROJECT_DIR$/scripts/test.py" />
         <option value="$PROJECT_DIR$/data/info_data.py" />
         <option value="$PROJECT_DIR$/scripts/4_insert_into_pitchers.py" />
+        <option value="$PROJECT_DIR$/docs/API 모음" />
+        <option value="$PROJECT_DIR$/scripts/2_create_new_event_players.sql" />
+        <option value="$PROJECT_DIR$/scripts/3_create_new_event_players.sql" />
+        <option value="$PROJECT_DIR$/scripts/3_create_new_event_players_tmp.sql" />
+        <option value="$PROJECT_DIR$/scripts/4_update_event_pitchers.py" />
+        <option value="$PROJECT_DIR$/scripts/5_insert_into_pitchers.py" />
+        <option value="$PROJECT_DIR$/scripts/get_today.py" />
+        <option value="$PROJECT_DIR$/scripts/6_get_today.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="163" />
-    <option name="y" value="120" />
-    <option name="width" value="1623" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="379" />
+    <option name="y" value="-21" />
+    <option name="width" value="1936" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +231,11 @@
             <path>
               <item name="ssafy_pjt2_data_processing" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssafy_pjt2_data_processing" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssafy_pjt2_data_processing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssafy_pjt2_data_processing" type="462c0819:PsiDirectoryNode" />
               <item name="Logger" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -192,19 +247,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\test_query" />
       <recent name="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4_insert_into_pitchers">
+  <component name="RunManager" selected="Python.6_get_today">
     <configuration name="4_insert_into_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ssafy_pjt2_data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,7 +286,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/4_insert_into_pitchers.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts\5_insert_into_pitchers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,7 +295,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="insert_into_new_event_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4_update_event_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ssafy_pjt2_data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,7 +307,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts\not_used_3_insert_into_new_event_pitchers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/4_update_event_pitchers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,28 +316,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="picture_crwaler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ssafy_pjt2_data_processing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/picture_crwaler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="update_event_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5_insert_into_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ssafy_pjt2_data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,7 +328,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts\3_update_event_pitchers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/5_insert_into_pitchers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,7 +337,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="update_pitchers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6_get_today" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ssafy_pjt2_data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -316,7 +349,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts\4_insert_into_pitchers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/6_get_today.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_today" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ssafy_pjt2_data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\github_repository\ssafy\ssafy_pjt2_data_processing\scripts\6_get_today.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -326,19 +380,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.picture_crwaler" />
-      <item itemvalue="Python.insert_into_new_event_pitchers" />
-      <item itemvalue="Python.update_event_pitchers" />
-      <item itemvalue="Python.update_pitchers" />
       <item itemvalue="Python.4_insert_into_pitchers" />
+      <item itemvalue="Python.5_insert_into_pitchers" />
+      <item itemvalue="Python.4_update_event_pitchers" />
+      <item itemvalue="Python.get_today" />
+      <item itemvalue="Python.6_get_today" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.6_get_today" />
+        <item itemvalue="Python.get_today" />
+        <item itemvalue="Python.5_insert_into_pitchers" />
+        <item itemvalue="Python.4_update_event_pitchers" />
         <item itemvalue="Python.4_insert_into_pitchers" />
-        <item itemvalue="Python.picture_crwaler" />
-        <item itemvalue="Python.update_event_pitchers" />
-        <item itemvalue="Python.update_pitchers" />
-        <item itemvalue="Python.insert_into_new_event_pitchers" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +414,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25184405" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22391991" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -368,7 +422,7 @@
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32899022" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32893288" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.40173724" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.24538545" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -377,6 +431,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25184405" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32899022" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32893288" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.40173724" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3995657" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -417,9 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -444,11 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/update_new_event_pitchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/update_new_event_pitchers.py" />
     <entry file="file://$PROJECT_DIR$/DB/db_connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -459,20 +525,7 @@
     <entry file="file://$PROJECT_DIR$/DB/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/insert_into_event_pitchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1288">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/insert_into_event_pitchers.py" />
     <entry file="file://$PROJECT_DIR$/data/event.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -481,45 +534,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/not_used_3_insert_into_new_event_pitchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <marker date="1664502188102" expanded="true" signature="299:1199" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/3_update_event_pitchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <marker date="1664503677031" expanded="true" signature="246:628" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/_insert_event_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
           <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="303" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,52 +558,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/protocol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="774" selection-start-line="774" selection-end-line="774" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/DML.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logger/logger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/info_data.py">
+    <entry file="file://$PROJECT_DIR$/core/crwalingmlbimg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3031">
-          <caret line="224" column="104" selection-start-line="224" selection-start-column="104" selection-end-line="224" selection-end-column="104" />
+        <state relative-caret-position="1449">
+          <caret line="140" column="83" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -590,23 +576,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/3_create_new_event_players_tmp.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="29" lean-forward="true" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/3_create_new_event_players.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="724" selection-start-line="724" selection-end-line="724" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/protocol.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/20220930_error_file_name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/20220930_save_file_name">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/logs/20220930_error_file_name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1453" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/info_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="224" column="104" selection-start-line="224" selection-start-column="104" selection-end-line="224" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/4_update_event_pitchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/not_used_3_insert_into_new_event_pitchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+            <marker date="1664502188102" expanded="true" signature="299:1199" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/crwalingmlbimg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="140" column="83" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="83" />
+    <entry file="file://$PROJECT_DIR$/docs/API 모음">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="13" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/4_insert_into_pitchers.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        <state relative-caret-position="142">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/DML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/statsapi/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/6_get_today.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/5_insert_into_pitchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

@@ -15,7 +15,7 @@ def update(table_name: str, where_condition: List, set_value: str):
             where += f" or event='{event}'"
         else:
             where += f" where event='{event}'"
-    sql = f"update event_pitchers set {set_value} = 1"
+    sql = f"update new_event_pitchers set {set_value} = 1"
     sql += where
     # sql = f"update event_pitchers set {set_value} = 0" # reset
     dml_instance.execute_update_sql(sql)
@@ -35,7 +35,7 @@ if __name__ == "__main__":
         if value[2] == 1:
             pa_list.append(key)
     print(new_event_to_pitchers_dict)
-    table_name = "event_pitchers"
+    table_name = "new_event_pitchers"
     update(table_name, is_hit_list, "is_hit")
     update(table_name, at_bat_list, "at_bat")
     update(table_name, pa_list, "pa")
