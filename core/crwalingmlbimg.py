@@ -137,9 +137,9 @@ class CrawlingMlbImg:
                                                condition=condition)
                 Logger.save_log_to_file(f"success_{i} {name_slugs[i]}", log_file_name)
                 print(f"{i} success")
-            except:
-                Logger.save_error_log_to_file(f"{preprocessed_name}", log_file_name)
-                print(f"{i} except")
+            except Exception as e:
+                Logger.save_error_log_to_file(f"{preprocessed_name} {e}", log_file_name)
+                print(f"{i} {e}")
 
             # print(f"2. random waiting sec:{sec}")
             time.sleep(sec)
