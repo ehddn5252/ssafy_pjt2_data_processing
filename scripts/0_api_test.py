@@ -15,3 +15,4 @@ if __name__ == "__main__":
     # https://statsapi.mlb.com/api/{ver}/sports/{sportId}/players
 
     print("hi")
+    statsapi.roster(teamId, rosterType=None, season=datetime.now().year, date=None)
