@@ -7,6 +7,7 @@ from DB.DML import DML
 
 if __name__ == "__main__":
     '''
+    https://github.com/toddrob99/MLB-StatsAPI/wiki
     200 아메리카 서부 리그
     201 아메리카 동부 리그
     202 아메리카 중부 리그
