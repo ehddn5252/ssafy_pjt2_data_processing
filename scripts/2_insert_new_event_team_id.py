@@ -61,8 +61,6 @@ if __name__ == "__main__":
                 weather = raw_data['gameData']['weather']['condition']
             except:
                 weather = "Unknown"
-            batter_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-            pitcher_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
             batter_val_list: List = []
             pitcher_val_list: List = []
             all_plays = raw_data['liveData']['plays']['allPlays']
@@ -114,12 +112,12 @@ if __name__ == "__main__":
                     pitcher_team_id = raw_data['gameData']['teams']['away']['id']
                     pitcher_team_name = raw_data['gameData']['teams']['away']['name']
 
-                batter_val_list.append((batter_team_id, batter_team_name, 'batters', batter_id, date, game_uid, season,
+                batter_val_list.append((batter_name, batter_team_id, batter_team_name, 'batters', batter_id, date, game_uid, season,
                                         weather, pitcher_id, event_index, event,
                                         event_type, player_main_position, pitcher_hand, rbi, strikes, balls, outs, inning,
                                         is_top_inning))
 
-                pitcher_val_list.append((pitcher_team_id, pitcher_team_name, 'pitchers', pitcher_id, date, game_uid, season,
+                pitcher_val_list.append((pitcher_name, pitcher_team_id, pitcher_team_name, 'pitchers', pitcher_id, date, game_uid, season,
                                          weather, batter_id, event_index, event,
                                          event_type, player_main_position, batter_hand, rbi, strikes, balls, outs, inning,
                                          is_top_inning))
@@ -128,6 +126,8 @@ if __name__ == "__main__":
                 # 개별
                 # batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{batter_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
                 # pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{pitcher_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
+            batter_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            pitcher_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
             dml_instance.execute_insert_many_sql(batter_sql, batter_val_list)
             dml_instance.execute_insert_many_sql(pitcher_sql, pitcher_val_list)
         except Exception as e:
