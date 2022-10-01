@@ -17,7 +17,7 @@ try:
         contents = response.text
         game_raw_data = json.dumps(json.loads(contents))
         sql = "insert into game_raw_datas (game_uid, game_raw_data, creater) values(%s, %s, %s)"
-        vals = (game_uid, game_raw_data, "인예림")
+        vals = (game_uid, game_raw_data, "")
         cur.execute(sql, vals)
         conn.commit()
 except Exception as e:

@@ -26,13 +26,31 @@ class DML:
     #     self.conn.close()
     #     return rows
 
-
-    def execute_insert_sql(self, sql,vars):
+    def execute_insert_sql(self, sql, vars):
         cur = self.conn.cursor()
-        cur.execute(sql,vars)
+        cur.execute(sql, vars)
         self.conn.commit()
 
+    def execute_fetch_sql(self, sql, vars, is_print=False):
+        if is_print:
+            print(sql)
+        cur = self.conn.cursor()
+        cur.execute(sql, vars)
+        fetched = cur.fetchall()
 
+        return fetched
+
+    def execute_insert_many_sql(self, sql,vars):
+        cur = self.conn.cursor()
+        cur.executemany(sql,vars)
+        self.conn.commit()
+
+    def execute_update_sql(self, sql, is_print=False):
+        if is_print:
+            print(sql)
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        self.conn.commit()
 
     def get_from_sql(self,sql):
         cur = self.conn.cursor()

@@ -1,0 +1,438 @@
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+tuple index out of range
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1054, "Unknown column 'left_rbi' in 'field list'")
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`pitchers`, CONSTRAINT `pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
