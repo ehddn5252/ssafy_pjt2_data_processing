@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec4b241-de7b-4f19-b4b5-25aa320a5507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/2_insert_new_event_team_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20221001_error_file_name" beforeDir="false" afterPath="$PROJECT_DIR$/logs/20221001_error_file_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20221001_save_file_name" beforeDir="false" afterPath="$PROJECT_DIR$/logs/20221001_save_file_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/0_api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/0_api_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20221002_save_file_name" beforeDir="false" afterPath="$PROJECT_DIR$/logs/20221002_save_file_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/2_insert_new_event_team_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_insert_new_event_team_id.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,7 @@
         <counts>
           <entry key="API 모음" value="39" />
           <entry key="dummy" value="132" />
-          <entry key="py" value="11761" />
+          <entry key="py" value="11793" />
           <entry key="raw_data_insert" value="1" />
           <entry key="sql" value="232" />
         </counts>
@@ -62,7 +59,7 @@
         <counts>
           <entry key="Markdown" value="39" />
           <entry key="PLAIN_TEXT" value="132" />
-          <entry key="Python" value="11762" />
+          <entry key="Python" value="11794" />
           <entry key="SQL" value="232" />
         </counts>
       </usages-collector>
@@ -73,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event_team_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="316">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -350,15 +347,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14805058" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14805058" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.328125" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32790446" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.328125" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32893288" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.35287732" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.35287732" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -715,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/2_insert_new_event_team_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="316">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -61,14 +61,16 @@ if __name__ == "__main__":
                 weather = raw_data['gameData']['weather']['condition']
             except:
                 weather = "Unknown"
-            batter_sql = "insert into new_new_events(team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-            pitcher_sql = "insert into new_new_events(team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            batter_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            pitcher_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
             batter_val_list: List = []
             pitcher_val_list: List = []
             all_plays = raw_data['liveData']['plays']['allPlays']
             for index in range(all_plays_len):
                 batter_id = all_plays[index]['matchup']['batter']['id']
+                batter_name = all_plays[index]['matchup']['batter']['fullName']
                 pitcher_id = all_plays[index]['matchup']['pitcher']['id']
+                pitcher_name = all_plays[index]['matchup']['pitcher']['fullName']
                 event_index = index
                 try:
                     event_type = all_plays[index]['result']['eventType']
