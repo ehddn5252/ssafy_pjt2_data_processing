@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     field_name = "img_url"
     # CrawlingMlbImg.save_db(table_name=table_name, player_names=players[now_num:row_num1], field_name=field_name)
-    CrawlingMlbImg.save_db_by_name_slug(table_name=table_name, name_slugs=players[row_num4:row_num5], field_name=field_name)
+    CrawlingMlbImg.save_db_by_name_slug(table_name=table_name, name_slugs=players[:], field_name=field_name)
 
     # 찬호
     # CrawlingGoogleImg.main(players[row_num1:row_num2])
