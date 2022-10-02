@@ -1,7 +1,7 @@
 import statsapi
 from pprint import pprint
 from DB.DML import DML
-
+from datetime import date
 ### 어제 진행한 게임
 
 
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     dml_instance = DML()
     vars=[]
     _league_code = 0
-    _date ="20221001"
+    _date = str(date.today()).replace("-","")
     _div_name = ""
     _div_rank = ""
     _elim_num=""

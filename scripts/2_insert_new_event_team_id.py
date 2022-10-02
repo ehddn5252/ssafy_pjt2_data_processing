@@ -38,20 +38,21 @@ if __name__ == "__main__":
 
     print(len(game_uids))
     num_sql = "SELECT count(game_uid) from game_raw_datas"
-    all_count = dml_instance.execute_fetch_sql(num_sql, [])
-    print(all_count[0][0])
-    all_count = all_count[0][0]
     # 50892 60536
-    for count, game_uid in tqdm(enumerate(reversed(game_uids))):
+    for count, game_uid in tqdm(enumerate(game_uids)):
         # if count<all_count-len(game_uids) - 50890:
         #     continue
         # if count<50890:
         #     continue
-        condition = f"game_uid={game_uid[0]}"
-        raw_data: Tuple = dml_instance.get_select_from_where(column_names=["game_raw_data"],
+        try:
+            condition = f"game_uid={game_uid[0]}"
+
+            raw_data: Tuple = dml_instance.get_select_from_where(column_names=["game_raw_data"],
                                                              table_name="game_raw_datas",
                                                              condition=condition)
-        raw_data: dict = json.loads(raw_data[0][0])
+            raw_data: dict = json.loads(raw_data[0][0])
+        except:
+            print("condition: " + condition)
         try:
             all_plays_len = len(raw_data['liveData']['plays']['allPlays'])
             date = raw_data['gameData']['datetime']['officialDate']
