@@ -26,3 +26,11 @@ select player_uid,season, opponent_hand,event, count(uid), sum(strikes), sum(bal
 from new_events
 group by player_uid, player_type,season, opponent_hand, event
 having player_type="pitchers"
+
+
+-- 2022.10.02 조정안2: 새로운  event_pitcher 10분
+insert into new_new_event_pitchers(player_uid, season, opponent_hand, event, count, strikes, balls, outs, rbi, name, team_id, team_name)
+select player_uid,season, opponent_hand,event, count(uid), sum(strikes), sum(balls), sum(outs), sum(rbi), name, team_id, team_name
+from new_new_events
+group by player_uid, player_type,season, opponent_hand,name,team_id,team_name, event
+having player_type="pitchers"

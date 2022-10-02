@@ -2,9 +2,7 @@ from DB.DML import DML
 from typing import Tuple, Dict, List
 import json
 from tqdm import tqdm
-import time, datetime
-from datetime import datetime
-from pprint import pprint
+
 
 # raw_data는 튜플형태
 '''

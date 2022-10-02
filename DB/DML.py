@@ -45,7 +45,7 @@ class DML:
         cur.executemany(sql,vars)
         self.conn.commit()
 
-    def execute_update_sql(self, sql, is_print=False):
+    def execute_sql(self, sql, is_print=False):
         if is_print:
             print(sql)
         cur = self.conn.cursor()

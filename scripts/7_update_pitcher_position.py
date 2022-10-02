@@ -18,5 +18,5 @@ if __name__ == "__main__":
     for uid, position in tqdm(postion_list):
 
         update_sql = f"update pitchers set primary_position_abbreviation = '{position}' where player_uid = {uid}"
-        dml_instance.execute_update_sql(update_sql)
+        dml_instance.execute_sql(update_sql)
 
