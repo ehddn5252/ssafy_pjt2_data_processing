@@ -3,7 +3,7 @@ from typing import List
 # 작성일 2022.09.30
 from Logger.logger import Logger
 
-from data.info_data import left_event_pitchers_to_pitchers_convert_dict, right_event_pitchers_to_pitchers_convert_dict
+from info.process_info import left_event_pitchers_to_pitchers_convert_dict, right_event_pitchers_to_pitchers_convert_dict
 import time
 from typing import Tuple
 from tqdm import tqdm

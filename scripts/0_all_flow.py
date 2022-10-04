@@ -6,9 +6,9 @@ from tqdm import tqdm
 from Logger.logger import Logger
 from DB.DML import DML
 from DB.DDL import DDL
-from data.info_data import left_event_pitchers_to_pitchers_convert_dict, right_event_pitchers_to_pitchers_convert_dict
+from info.process_info import left_event_pitchers_to_pitchers_convert_dict, right_event_pitchers_to_pitchers_convert_dict
 import time
-from data.info_data import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
+from info.process_info import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
 
 log_file_name = "4_insert_into_pitcher_log.txt"
 

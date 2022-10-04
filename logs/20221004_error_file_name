@@ -1,0 +1,653 @@
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00561353+2233171]
+	Ordinal0 [0x004F8E31+1805873]
+	Ordinal0 [0x004066FD+812797]
+	Ordinal0 [0x004355DF+1005023]
+	Ordinal0 [0x004357CB+1005515]
+	Ordinal0 [0x00467632+1209906]
+	Ordinal0 [0x00451AD4+1120980]
+	Ordinal0 [0x004659E2+1202658]
+	Ordinal0 [0x004518A6+1120422]
+	Ordinal0 [0x0042A73D+960317]
+	Ordinal0 [0x0042B71F+964383]
+	GetHandleVerifier [0x0080A2C2+2728322]
+	GetHandleVerifier [0x007FC184+2670660]
+	GetHandleVerifier [0x005F102A+528106]
+	GetHandleVerifier [0x005EFE10+523472]
+	Ordinal0 [0x0050028C+1835660]
+	Ordinal0 [0x00504758+1853272]
+	Ordinal0 [0x00504845+1853509]
+	Ordinal0 [0x0050E7E4+1894372]
+	BaseThreadInitThunk [0x7684FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777C7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x777C7A6E+238]
+
+
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FD1353+2233171]
+	Ordinal0 [0x00F68E31+1805873]
+	Ordinal0 [0x00E766FD+812797]
+	Ordinal0 [0x00EA55DF+1005023]
+	Ordinal0 [0x00EA57CB+1005515]
+	Ordinal0 [0x00ED7632+1209906]
+	Ordinal0 [0x00EC1AD4+1120980]
+	Ordinal0 [0x00ED59E2+1202658]
+	Ordinal0 [0x00EC18A6+1120422]
+	Ordinal0 [0x00E9A73D+960317]
+	Ordinal0 [0x00E9B71F+964383]
+	GetHandleVerifier [0x0127A2C2+2728322]
+	GetHandleVerifier [0x0126C184+2670660]
+	GetHandleVerifier [0x0106102A+528106]
+	GetHandleVerifier [0x0105FE10+523472]
+	Ordinal0 [0x00F7028C+1835660]
+	Ordinal0 [0x00F74758+1853272]
+	Ordinal0 [0x00F74845+1853509]
+	Ordinal0 [0x00F7E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+david-rhinehart-565793 (2013, 'Lost connection to MySQL server during query')
+
+david-rhino-565794 (0, '')
+
+brian-rhode-565795 (0, '')
+
+donald-rhoden-565796 (0, '')
+
+william-rhoden-565797 (0, '')
+
+david-rhodenbaugh-565798 (0, '')
+
+brad-rhodes-565799 (0, '')
+
+jeff-rhodes-565800 (0, '')
+
+mike-rhodes-565801 (0, '')
+
+raleigh-rhodes-565802 (0, '')
+
+randy-rhodes-565803 (0, '')
+
+rory-rhodes-565804 (0, '')
+
+vernon-rhodes-565805 (0, '')
+
+steve-rhodin-565806 (0, '')
+
+orville-rhuems-565807 (0, '')
+
+ken-rhyne-565808 (0, '')
+
+duke-ribar-565809 (0, '')
+
+edward-ribera-565810 (0, '')
+
+randy-riccardi-565811 (0, '')
+
+frank-ricchey-565812 (0, '')
+
+robed-ricciani-565813 (0, '')
+
+andrew-rice-565814 (0, '')
+
+brian-rice-565815 (0, '')
+
+huey-rice-565816 (0, '')
+
+james-rice-565817 (0, '')
+
+steven-rice-565818 (0, '')
+
+tim-rice-565819 (0, '')
+
+james-rich-565820 (0, '')
+
+richard-rich-565821 (0, '')
+
+rich-richardi-565822 (0, '')
+
+david-richards-565823 (0, '')
+
+greg-richards-565824 (0, '')
+
+kevin-richards-565825 (0, '')
+
+robert-richards-565826 (0, '')
+
+tim-richards-565827 (0, '')
+
+carl-richardson-565828 (0, '')
+
+david-richardson-565829 (0, '')
+
+derrick-richardson-565830 (0, '')
+
+donnie-richardson-565831 (0, '')
+
+eric-richardson-565832 (0, '')
+
+horace-richardson-565833 (0, '')
+
+james-richardson-565834 (0, '')
+
+jay-richardson-565835 (0, '')
+
+jeff-richardson-565836 (0, '')
+
+keith-richardson-565837 (0, '')
+
+kerry-richardson-565838 (0, '')
+
+randolph-richardson-565839 (0, '')
+
+renardo-richardson-565840 (0, '')
+
+robert-richardson-565841 (0, '')
+
+ron-richardson-565842 (0, '')
+
+scott-richartz-565843 (0, '')
+
+tim-riche-565844 (0, '')
+
+drew-richer-565845 (0, '')
+
+steve-richman-565846 (0, '')
+
+al-richmond-565847 (0, '')
+
+harold-richmond-565848 (0, '')
+
+kirk-richmond-565849 (0, '')
+
+seth-richmond-565850 (0, '')
+
+gary-richter-565851 (0, '')
+
+dean-rick-565852 (0, '')
+
+eric-ricketts-565853 (0, '')
+
+terry-ricketts-565854 (0, '')
+
+edward-ricks-565855 (0, '')
+
+tom-ricks-565856 (0, '')
+
+aaron-rico-565857 (0, '')
+
+gordon-ricossa-565858 (0, '')
+
+james-riddell-565859 (0, '')
+
+larry-riddle-565860 (0, '')
+
+larry-riddle-565861 (0, '')
+
+raleigh-riddle-565862 (0, '')
+
+mark-ridgik-565864 (0, '')
+
+errect-ridley-565865 (0, '')
+
+lois-ridley-565866 (0, '')
+
+ron-ridling-565867 (0, '')
+
+james-riedel-565868 (0, '')
+
+karl-rieger-565869 (0, '')
+
+david-riehl-565870 (0, '')
+
+john-riehs-565871 (0, '')
+
+robin-riemer-565872 (0, '')
+
+ken-riensche-565873 (0, '')
+
+john-riffle-565874 (0, '')
+
+peter-riffle-565875 (0, '')
+
+jim-rigby-565876 (0, '')
+
+kevin-rigby-565877 (0, '')
+
+calvin-riggar-565878 (0, '')
+
+nathaniel-riggin-565879 (0, '')
+
+james-riggs-565880 (0, '')
+
+steve-righetti-565881 (0, '')
+
+rusty-rightmire-565882 (0, '')
+
+darren-riley-565883 (0, '')
+
+edward-riley-565884 (0, '')
+
+mike-riley-565885 (0, '')
+
+randy-riley-565886 (0, '')
+
+steve-riley-565887 (0, '')
+
+tim-riley-565888 (0, '')
+
+tom-riley-565889 (0, '')
+
+tom-rima-565890 (0, '')
+
+gene-rinaldi-565891 (0, '')
+
+john-rincon-565892 (0, '')
+
+greg-rineer-565893 (0, '')
+
+charles-ringer-565894 (0, '')
+
+ronald-rippee-565895 (0, '')
+
+mike-ripplinger-565896 (0, '')
+
+jack-risdon-565897 (0, '')
+
+elijah-risper-565898 (0, '')
+
+james-rispoli-565899 (0, '')
+
+paul-risso-565900 (0, '')
+
+wayne-ristig-565901 (0, '')
+
+jack-ritch-565902 (0, '')
+
+larry-ritchey-565903 (0, '')
+
+robert-ritchie-565905 (0, '')
+
+robert-ritchie-565906 (0, '')
+
+steven-ritchie-565907 (0, '')
+
+rickey-ritschel-565908 (0, '')
+
+chris-ritter-565909 (0, '')
+
+john-ritter-565910 (0, '')
+
+ronald-ritter-565911 (0, '')
+
+arness-rittman-565912 (0, '')
+
+william-rittweger-565913 (0, '')
+
+ray-rivas-565914 (0, '')
+
+ricardo-rivas-565915 (0, '')
+
+neil-rivenburg-565916 (0, '')
+
+david-rivera-565917 (0, '')
+
+jim-rivera-565918 (0, '')
+
+pete-rivera-565919 (0, '')
+
+randy-rivera-565920 (0, '')
+
+rene-rivera-565921 (0, '')
+
+martin-rivero-565922 (0, '')
+
+richard-rix-565923 (0, '')
+
+mike-rizzo-565924 (0, '')
+
+richard-rizzo-565925 (0, '')
+
+rick-rizzo-565926 (0, '')
+
+james-roach-565927 (0, '')
+
+james-roach-565928 (0, '')
+
+stephen-roache-565929 (0, '')
+
+steven-roak-565930 (0, '')
+
+patrick-roark-565931 (0, '')
+
+tom-roarke-565932 (0, '')
+
+john-roatche-565933 (0, '')
+
+steven-roath-565934 (0, '')
+
+michael-robair-565935 (0, '')
+
+allen-robbins-565936 (0, '')
+
+edward-robbins-565937 (0, '')
+
+gary-robbins-565938 (0, '')
+
+john-robbins-565939 (0, '')
+
+leroy-robbins-565940 (0, '')
+
+robert-robbins-565941 (0, '')
+
+ronnie-robbins-565942 (0, '')
+
+steven-robbins-565943 (0, '')
+
+tom-robbins-565944 (0, '')
+
+vaughn-robbins-565945 (0, '')
+
+william-robbins-565946 (0, '')
+
+ell-roberson-565947 (0, '')
+
+hiawatha-roberson-565948 (0, '')
+
+gerald-robert-565949 (0, '')
+
+maurice-robert-565950 (0, '')
+
+vincent-roberto-565951 (0, '')
+
+archie-roberts-565952 (0, '')
+
+carlton-roberts-565953 (0, '')
+
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00A91353+2233171]
+	Ordinal0 [0x00A28E31+1805873]
+	Ordinal0 [0x009366FD+812797]
+	Ordinal0 [0x009655DF+1005023]
+	Ordinal0 [0x009657CB+1005515]
+	Ordinal0 [0x00997632+1209906]
+	Ordinal0 [0x00981AD4+1120980]
+	Ordinal0 [0x009959E2+1202658]
+	Ordinal0 [0x009818A6+1120422]
+	Ordinal0 [0x0095A73D+960317]
+	Ordinal0 [0x0095B71F+964383]
+	GetHandleVerifier [0x00D3A2C2+2728322]
+	GetHandleVerifier [0x00D2C184+2670660]
+	GetHandleVerifier [0x00B2102A+528106]
+	GetHandleVerifier [0x00B1FE10+523472]
+	Ordinal0 [0x00A3028C+1835660]
+	Ordinal0 [0x00A34758+1853272]
+	Ordinal0 [0x00A34845+1853509]
+	Ordinal0 [0x00A3E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+david-rhinehart-565793 (2013, 'Lost connection to MySQL server during query')
+
+david-rhino-565794 (0, '')
+
+brian-rhode-565795 (0, '')
+
+donald-rhoden-565796 (0, '')
+
+william-rhoden-565797 (0, '')
+
+david-rhodenbaugh-565798 (0, '')
+
+brad-rhodes-565799 (0, '')
+
+jeff-rhodes-565800 (0, '')
+
+mike-rhodes-565801 (0, '')
+
+raleigh-rhodes-565802 (0, '')
+
+randy-rhodes-565803 (0, '')
+
+rory-rhodes-565804 (0, '')
+
+vernon-rhodes-565805 (0, '')
+
+steve-rhodin-565806 (0, '')
+
+orville-rhuems-565807 (0, '')
+
+ken-rhyne-565808 (0, '')
+
+duke-ribar-565809 (0, '')
+
+edward-ribera-565810 (0, '')
+
+randy-riccardi-565811 (0, '')
+
+frank-ricchey-565812 (0, '')
+
+robed-ricciani-565813 (0, '')
+
+andrew-rice-565814 (0, '')
+
+brian-rice-565815 (0, '')
+
+huey-rice-565816 (0, '')
+
+james-rice-565817 (0, '')
+
+steven-rice-565818 (0, '')
+
+tim-rice-565819 (0, '')
+
+james-rich-565820 (0, '')
+
+richard-rich-565821 (0, '')
+
+rich-richardi-565822 (0, '')
+
+david-richards-565823 (0, '')
+
+greg-richards-565824 (0, '')
+
+kevin-richards-565825 (0, '')
+
+robert-richards-565826 (0, '')
+
+tim-richards-565827 (0, '')
+
+carl-richardson-565828 (0, '')
+
+david-richardson-565829 (0, '')
+
+derrick-richardson-565830 (0, '')
+
+donnie-richardson-565831 (0, '')
+
+eric-richardson-565832 (0, '')
+
+horace-richardson-565833 (0, '')
+
+james-richardson-565834 (0, '')
+
+jay-richardson-565835 (0, '')
+
+jeff-richardson-565836 (0, '')
+
+keith-richardson-565837 (0, '')
+
+kerry-richardson-565838 (0, '')
+
+randolph-richardson-565839 (0, '')
+
+renardo-richardson-565840 (0, '')
+
+robert-richardson-565841 (0, '')
+
+ron-richardson-565842 (0, '')
+
+scott-richartz-565843 (0, '')
+
+tim-riche-565844 (0, '')
+
+drew-richer-565845 (0, '')
+
+steve-richman-565846 (0, '')
+
+al-richmond-565847 (0, '')
+
+harold-richmond-565848 (0, '')
+
+kirk-richmond-565849 (0, '')
+
+seth-richmond-565850 (0, '')
+
+gary-richter-565851 (0, '')
+
+dean-rick-565852 (0, '')
+
+eric-ricketts-565853 (0, '')
+
+terry-ricketts-565854 (0, '')
+
+edward-ricks-565855 (0, '')
+
+tom-ricks-565856 (0, '')
+
+aaron-rico-565857 (0, '')
+
+gordon-ricossa-565858 (0, '')
+
+james-riddell-565859 (0, '')
+
+larry-riddle-565860 (0, '')
+
+larry-riddle-565861 (0, '')
+
+raleigh-riddle-565862 (0, '')
+
+mark-ridgik-565864 (0, '')
+
+errect-ridley-565865 (0, '')
+
+lois-ridley-565866 (0, '')
+
+ron-ridling-565867 (0, '')
+
+james-riedel-565868 (0, '')
+
+karl-rieger-565869 (0, '')
+
+david-riehl-565870 (0, '')
+
+john-riehs-565871 (0, '')
+
+robin-riemer-565872 (0, '')
+
+ken-riensche-565873 (0, '')
+
+john-riffle-565874 (0, '')
+
+peter-riffle-565875 (0, '')
+
+jim-rigby-565876 (0, '')
+
+kevin-rigby-565877 (0, '')
+
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+tim-sherrill-566939 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+jerry-vitatoe-568188 Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B4DFFA+712698]
+	Ordinal0 [0x00BB506B+1134699]
+	Ordinal0 [0x00BC514A+1200458]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+

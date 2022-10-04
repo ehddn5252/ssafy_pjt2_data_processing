@@ -39,9 +39,9 @@ if __name__ == "__main__":
             else:
                 result_type_dic[type] += 1
 
-        if count == 10000:
-            # pprint("")
-            # pprint("event_count")
-            # pprint(event_count)
-            # pprint(result_type_dic)
+        if count == 10:
+            pprint("")
+            pprint("event_count")
+            pprint(event_count)
+            pprint(result_type_dic)
             exit(-1)

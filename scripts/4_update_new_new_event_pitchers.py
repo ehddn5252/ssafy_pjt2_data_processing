@@ -3,7 +3,7 @@ from typing import List
 # 작성일 2022.09.30
 
 
-from data.info_data import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
+from info.process_info import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
 
 
 # raw_data는 튜플형태

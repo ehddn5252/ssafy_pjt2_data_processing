@@ -1,5 +1,5 @@
 from .db_connector import DB_controller
-from data.sql_data import create_events_sql,create_event_pitchers_sql,create_pitchers_sql,create_test_sql
+from info.sql_info_data import create_events_sql,create_event_pitchers_sql,create_pitchers_sql,create_test_sql
 
 class DDL:
     conn = DB_controller.e202_con

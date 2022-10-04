@@ -26,6 +26,7 @@ from tqdm import tqdm
 - is_top_inning(현재 초공격인지 말공격인지): liveData.plays.allPlays.[index].about.isTopInning
 - at타수 정보인지(at bat): liveData.plays.allPlays.[index].result.type (모든 경우가 atBat 이라 하지 않기)
 '''
+
 if __name__ == "__main__":
     dml_instance = DML()
     raw_data: Tuple = None
