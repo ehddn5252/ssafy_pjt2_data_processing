@@ -651,3 +651,1521 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
 
 
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+charles-wood-569061 (2006, "MySQL server has gone away (ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None))")
+
+david-wood-569062 (0, '')
+
+dennis-wood-569063 (0, '')
+
+joe-wood-569064 (0, '')
+
+joe-wood-569065 (0, '')
+
+john-wood-569066 (0, '')
+
+johnson-wood-569067 (0, '')
+
+leon-wood-569068 (0, '')
+
+michael-wood-569069 (0, '')
+
+michael-wood-569070 (0, '')
+
+raymond-wood-569071 (0, '')
+
+robert-wood-569072 (0, '')
+
+robert-wood-569073 (0, '')
+
+steve-wood-569074 (0, '')
+
+steven-wood-569075 (0, '')
+
+tony-wood-569076 (0, '')
+
+william-wood-569077 (0, '')
+
+william-wood-569078 (0, '')
+
+william-wood-569079 (0, '')
+
+mark-woodbrey-569080 (0, '')
+
+robert-woodcock-569081 (0, '')
+
+larry-woodhall-569082 (0, '')
+
+david-woodhouse-569083 (0, '')
+
+robert-woodland-569084 (0, '')
+
+barry-woodruff-569085 (0, '')
+
+glenn-woodruff-569086 (0, '')
+
+robert-woodruff-569087 (0, '')
+
+william-woodruff-569088 (0, '')
+
+buford-woods-569089 (0, '')
+
+dennis-woods-569090 (0, '')
+
+eric-woods-569091 (0, '')
+
+james-woods-569092 (0, '')
+
+jason-woods-569093 (0, '')
+
+jeffrey-woods-569094 (0, '')
+
+michael-woods-569095 (0, '')
+
+robert-woods-569096 (0, '')
+
+ron-woods-569097 (0, '')
+
+steven-woods-569098 (0, '')
+
+tyrone-woods-569099 (0, '')
+
+vic-woods-569100 (0, '')
+
+victor-woods-569101 (0, '')
+
+vince-woods-569102 (0, '')
+
+brian-woodward-569103 (0, '')
+
+don-woodward-569104 (0, '')
+
+james-woodward-569105 (0, '')
+
+john-woodward-569106 (0, '')
+
+rob-woodward-569107 (0, '')
+
+david-woodworth-569108 (0, '')
+
+harley-woody-569109 (0, '')
+
+aaron-wooley-569110 (0, '')
+
+david-wooley-569111 (0, '')
+
+hugh-woolridge-569112 (0, '')
+
+jack-woolsey-569113 (0, '')
+
+jimmy-wooly-569114 (0, '')
+
+marvin-wooten-569115 (0, '')
+
+michael-wooten-569116 (0, '')
+
+brent-worcester-569117 (0, '')
+
+bill-worden-569118 (0, '')
+
+mel-workman-569119 (0, '')
+
+michael-workman-569120 (0, '')
+
+gary-wormelduff-569121 (0, '')
+
+victor-worry-569122 (0, '')
+
+james-worth-569123 (0, '')
+
+andy-wortham-569124 (0, '')
+
+robert-worthington-569125 (0, '')
+
+thomas-worthington-569126 (0, '')
+
+russ-wortmann-569127 (0, '')
+
+james-wosman-569128 (0, '')
+
+leonard-wouters-569129 (0, '')
+
+frank-wren-569130 (0, '')
+
+luther-wrenn-569131 (0, '')
+
+steve-wrenn-569132 (0, '')
+
+kevin-wrice-569133 (0, '')
+
+andrew-wright-569134 (0, '')
+
+bruce-wright-569135 (0, '')
+
+carl-wright-569136 (0, '')
+
+cedric-wright-569137 (0, '')
+
+curtis-wright-569138 (0, '')
+
+david-wright-569139 (0, '')
+
+dwayne-wright-569140 (0, '')
+
+edward-wright-569141 (0, '')
+
+frank-wright-569142 (0, '')
+
+gary-wright-569143 (0, '')
+
+gary-wright-569144 (0, '')
+
+gary-wright-569145 (0, '')
+
+gerald-wright-569146 (0, '')
+
+goldie-wright-569147 (0, '')
+
+j-p-wright-569148 (0, '')
+
+kem-wright-569149 (0, '')
+
+kenneth-wright-569150 (0, '')
+
+kenneth-wright-569151 (0, '')
+
+kenneth-wright-569152 (0, '')
+
+lamar-wright-569153 (0, '')
+
+larry-wright-569154 (0, '')
+
+larry-wright-569155 (0, '')
+
+mark-wright-569156 (0, '')
+
+mark-wright-569157 (0, '')
+
+michael-wright-569158 (0, '')
+
+mike-wright-569159 (0, '')
+
+pat-wright-569160 (0, '')
+
+robert-wright-569162 (0, '')
+
+roger-wright-569163 (0, '')
+
+scott-wright-569164 (0, '')
+
+steve-wright-569165 (0, '')
+
+thomas-wright-569166 (0, '')
+
+thomas-wright-569167 (0, '')
+
+william-wright-569168 (0, '')
+
+william-wright-569169 (0, '')
+
+william-wright-569170 (0, '')
+
+william-wright-569171 (0, '')
+
+william-wrightson-569172 (0, '')
+
+ron-wrigley-569173 (0, '')
+
+martin-writt-569174 (0, '')
+
+ron-wrobel-569175 (0, '')
+
+ron-wrona-569176 (0, '')
+
+randy-wroten-569177 (0, '')
+
+mark-wulfemeyer-569178 (0, '')
+
+richard-wurkits-569179 (0, '')
+
+richard-wurstner-569180 (0, '')
+
+richard-wustefeld-569181 (0, '')
+
+allan-wyatt-569182 (0, '')
+
+charles-wyatt-569183 (0, '')
+
+darrell-wyatt-569184 (0, '')
+
+john-wyatt-569185 (0, '')
+
+porter-wyatt-569186 (0, '')
+
+steve-wyatt-569187 (0, '')
+
+mark-wychopen-569188 (0, '')
+
+william-wyles-569189 (0, '')
+
+anthony-wylie-569190 (0, '')
+
+ronnie-wynne-569191 (0, '')
+
+courtney-wyrick-569192 (0, '')
+
+paul-wysocki-569193 (0, '')
+
+richard-wysocki-569194 (0, '')
+
+dennis-wyszynski-569195 (0, '')
+
+mike-yackee-569196 (0, '')
+
+vaughn-yadao-569197 (0, '')
+
+chuck-yaeger-569198 (0, '')
+
+james-yaeger-569199 (0, '')
+
+stan-yagiello-569200 (0, '')
+
+john-yalden-569201 (0, '')
+
+juan-yancof-569202 (0, '')
+
+john-yandle-569203 (0, '')
+
+eddy-yanes-569204 (0, '')
+
+jerome-yankrick-569205 (0, '')
+
+bud-yanus-569206 (0, '')
+
+gregory-yarbrough-569207 (0, '')
+
+dennis-yard-569208 (0, '')
+
+mike-yastrzemski-569209 (0, '')
+
+david-yates-569210 (0, '')
+
+michael-yates-569211 (0, '')
+
+mickey-yates-569212 (0, '')
+
+jimmy-yawn-569213 (0, '')
+
+perry-yawn-569214 (0, '')
+
+jesse-ybarra-569215 (0, '')
+
+robert-yeager-569216 (0, '')
+
+bert-yeargan-569217 (0, '')
+
+henry-yeargan-569218 (0, '')
+
+perry-yearwood-569219 (0, '')
+
+john-yeglinski-569220 (0, '')
+
+elmer-yelverton-569221 (0, '')
+
+elmer-yelvington-569222 (0, '')
+
+mike-yesenchak-569223 (0, '')
+
+stephen-yetsko-569224 (0, '')
+
+fred-yilling-569225 (0, '')
+
+dana-ynostroza-569226 (0, '')
+
+ted-yoak-569227 (0, '')
+
+richard-yochem-569228 (0, '')
+
+joe-yocum-569229 (0, '')
+
+kris-yoder-569230 (0, '')
+
+robert-yodice-569231 (0, '')
+
+gregory-yoken-569232 (0, '')
+
+dan-yokubaitis-569233 (0, '')
+
+lavis-york-569234 (0, '')
+
+rusty-york-569235 (0, '')
+
+lanny-yost-569236 (0, '')
+
+michael-younce-569237 (0, '')
+
+cameron-young-569238 (0, '')
+
+charles-young-569239 (0, '')
+
+danny-young-569240 (0, '')
+
+don-young-569241 (0, '')
+
+donald-young-569242 (0, '')
+
+douglas-young-569243 (0, '')
+
+edward-young-569244 (0, '')
+
+ernest-young-569245 (0, '')
+
+gary-young-569246 (0, '')
+
+gary-young-569247 (0, '')
+
+john-young-569248 (0, '')
+
+ken-young-569250 (0, '')
+
+kevin-young-569251 (0, '')
+
+kevin-young-569252 (0, '')
+
+mark-young-569253 (0, '')
+
+michael-young-569254 (0, '')
+
+michael-young-569255 (0, '')
+
+mike-young-569256 (0, '')
+
+mike-young-569257 (0, '')
+
+mike-young-569258 (0, '')
+
+randy-young-569259 (0, '')
+
+richard-young-569260 (0, '')
+
+robert-young-569261 (0, '')
+
+ronald-young-569262 (0, '')
+
+scott-young-569263 (0, '')
+
+stephen-young-569264 (0, '')
+
+steve-young-569265 (0, '')
+
+wayne-young-569266 (0, '')
+
+kenneth-youngblood-569267 (0, '')
+
+stan-younger-569268 (0, '')
+
+stephen-youngman-569269 (0, '')
+
+robed-youse-569270 (0, '')
+
+collin-youtz-569271 (0, '')
+
+john-yowler-569272 (0, '')
+
+dale-yraguen-569273 (0, '')
+
+richard-yraguen-569274 (0, '')
+
+nicolas-ysursa-569275 (0, '')
+
+pat-zachary-569276 (0, '')
+
+todd-zacher-569277 (0, '')
+
+joe-zagarino-569278 (0, '')
+
+otis-zagorski-569279 (0, '')
+
+paul-zahn-569280 (0, '')
+
+roger-zahn-569281 (0, '')
+
+anthony-zahradnick-569282 (0, '')
+
+gregory-zail-569283 (0, '')
+
+timothy-zajeski-569284 (0, '')
+
+john-zalopany-569285 (0, '')
+
+stan-zaltsman-569286 (0, '')
+
+alberto-zamora-569287 (0, '')
+
+brian-zanardelli-569288 (0, '')
+
+louis-zanini-569289 (0, '')
+
+richard-zank-569290 (0, '')
+
+brien-zapalac-569291 (0, '')
+
+david-zapien-569292 (0, '')
+
+tim-zapolski-569293 (0, '')
+
+alberto-zappala-569294 (0, '')
+
+victor-zaremba-569295 (0, '')
+
+ken-zarski-569296 (0, '')
+
+wayne-zaskoda-569297 (0, '')
+
+turtle-zaun-569298 (0, '')
+
+david-zauner-569299 (0, '')
+
+doug-zavodny-569300 (0, '')
+
+robert-zavorskas-569301 (0, '')
+
+stanley-zawacki-569302 (0, '')
+
+corey-zawadski-569303 (0, '')
+
+eugene-zawatski-569304 (0, '')
+
+frank-zawatski-569305 (0, '')
+
+john-zbercot-569306 (0, '')
+
+elwood-zebley-569307 (0, '')
+
+charles-zecco-569308 (0, '')
+
+david-zech-569309 (0, '')
+
+william-zedalis-569310 (0, '')
+
+gary-zedonak-569311 (0, '')
+
+pete-zeegers-569312 (0, '')
+
+john-zelenka-569313 (0, '')
+
+brian-zell-569314 (0, '')
+
+joey-zellner-569315 (0, '')
+
+gary-zelmanski-569316 (0, '')
+
+bill-zempolich-569317 (0, '')
+
+morton-zenor-569318 (0, '')
+
+anthony-zentgraf-569319 (0, '')
+
+manuel-zepeda-569320 (0, '')
+
+rod-zeratsky-569321 (0, '')
+
+james-zerilla-569322 (0, '')
+
+john-ziccardi-569323 (0, '')
+
+harold-ziegler-569324 (0, '')
+
+james-ziegler-569325 (0, '')
+
+robert-ziegler-569326 (0, '')
+
+glenn-zielinski-569327 (0, '')
+
+peter-zilonis-569328 (0, '')
+
+robert-zima-569329 (0, '')
+
+tommy-zimmer-569330 (0, '')
+
+george-zimmerer-569331 (0, '')
+
+bruce-zimmerman-569332 (0, '')
+
+clyde-zimmerman-569333 (0, '')
+
+curtis-zimmerman-569334 (0, '')
+
+dennis-zimmerman-569335 (0, '')
+
+doug-zimmerman-569336 (0, '')
+
+steve-zimmerman-569337 (0, '')
+
+tom-zimmerman-569338 (0, '')
+
+chris-zink-569339 (0, '')
+
+mike-zink-569340 (0, '')
+
+richard-zinniger-569341 (0, '')
+
+gary-zipfel-569342 (0, '')
+
+william-zisk-569343 (0, '')
+
+david-zitkus-569344 (0, '')
+
+paul-zobeck-569345 (0, '')
+
+terry-zorger-569346 (0, '')
+
+peter-zorich-569347 (0, '')
+
+richard-zoss-569348 (0, '')
+
+john-zotz-569349 (0, '')
+
+mike-zouras-569350 (0, '')
+
+curtis-zucco-569351 (0, '')
+
+ralph-zuniga-569352 (0, '')
+
+greg-zunino-569353 (0, '')
+
+bill-zupka-569354 (0, '')
+
+wayne-zurburg-569355 (0, '')
+
+jon-zureich-569356 (0, '')
+
+eugene-zurowski-569357 (0, '')
+
+fred-zweifel-569358 (0, '')
+
+gary-zwolinski-569360 (0, '')
+
+dan-forsythe-569361 (0, '')
+
+linwood-forte-569362 (0, '')
+
+jim-fortenberry-569363 (0, '')
+
+dennis-fortner-569364 (0, '')
+
+douglas-fortune-569365 (0, '')
+
+albert-foster-569366 (0, '')
+
+bryan-foster-569367 (0, '')
+
+chuck-foster-569368 (0, '')
+
+douglas-foster-569369 (0, '')
+
+gregg-foster-569370 (0, '')
+
+ken-foster-569371 (0, '')
+
+michael-foster-569372 (0, '')
+
+otis-foster-569373 (0, '')
+
+paul-foster-569374 (0, '')
+
+randy-foster-569375 (0, '')
+
+thomas-foster-569376 (0, '')
+
+stu-foulks-569377 (0, '')
+
+ronald-fournier-569378 (0, '')
+
+john-fouse-569379 (0, '')
+
+mark-fouse-569380 (0, '')
+
+george-foussianes-569381 (0, '')
+
+greg-fowble-569382 (0, '')
+
+charles-fowke-569383 (0, '')
+
+david-fowke-569384 (0, '')
+
+don-fowler-569385 (0, '')
+
+george-fowler-569386 (0, '')
+
+marvin-fowler-569387 (0, '')
+
+michael-fowler-569388 (0, '')
+
+randall-fowler-569389 (0, '')
+
+russ-fowler-569390 (0, '')
+
+david-fowlkes-569391 (0, '')
+
+george-fowlkes-569392 (0, '')
+
+craig-fox-569393 (0, '')
+
+donald-fox-569394 (0, '')
+
+john-fox-569395 (0, '')
+
+paul-fox-569396 (0, '')
+
+james-foxwell-569397 (0, '')
+
+michael-foyer-569398 (0, '')
+
+randy-foyt-569399 (0, '')
+
+gary-fradella-569400 (0, '')
+
+harry-francis-569401 (0, '')
+
+john-francis-569402 (0, '')
+
+phillip-francis-569403 (0, '')
+
+russ-francis-569404 (0, '')
+
+brian-francisco-569405 (0, '')
+
+bert-francks-569406 (0, '')
+
+paul-franco-569407 (0, '')
+
+andres-frank-569408 (0, '')
+
+david-frank-569409 (0, '')
+
+ray-frank-569410 (0, '')
+
+alan-franklin-569411 (0, '')
+
+charles-franklin-569412 (0, '')
+
+chester-franklin-569413 (0, '')
+
+dennis-franklin-569414 (0, '')
+
+elliot-franklin-569415 (0, '')
+
+jay-franklin-569416 (0, '')
+
+jeff-franklin-569417 (0, '')
+
+larry-franklin-569418 (0, '')
+
+perry-franklin-569419 (0, '')
+
+peter-franklin-569420 (0, '')
+
+tommy-franklin-569421 (0, '')
+
+jeff-franks-569422 (0, '')
+
+john-franks-569423 (0, '')
+
+michael-franks-569424 (0, '')
+
+robert-franks-569425 (0, '')
+
+bruce-frankum-569426 (0, '')
+
+randy-frankum-569427 (0, '')
+
+robert-frantz-569428 (0, '')
+
+robert-franz-569429 (0, '')
+
+jules-franzen-569430 (0, '')
+
+todd-fraser-569431 (0, '')
+
+william-fraser-569432 (0, '')
+
+carl-fraticelli-569433 (0, '')
+
+terry-frawley-569434 (0, '')
+
+daryl-frazier-569435 (0, '')
+
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+martires-arias-570658 (2013, 'Lost connection to MySQL server during query')
+
+pedro-de-los-santos-570659 (0, '')
+
+dawrin-frias-570660 (0, '')
+
+adalberto-lopez-570661 (0, '')
+
+flabio-ortega-570662 (0, '')
+
+hansel-robles-570663 (0, '')
+
+carlos-vazquez-570664 (0, '')
+
+wandel-avila-570665 (0, '')
+
+luis-cessa-570666 (0, '')
+
+daniel-de-leon-570667 (0, '')
+
+edwin-barrera-570668 (0, '')
+
+thomas-de-wolf-570669 (0, '')
+
+eudy-pina-570670 (0, '')
+
+marcus-guillen-570671 (0, '')
+
+gilbert-gomez-570672 (0, '')
+
+ricardo-arevalo-570673 (0, '')
+
+frank-frias-570674 (0, '')
+
+edgar-martinez-570675 (0, '')
+
+francisco-nunez-570676 (0, '')
+
+luis-nunez-570677 (0, '')
+
+wilson-sanchez-570678 (0, '')
+
+felix-gallardo-570679 (0, '')
+
+victor-arias-570680 (0, '')
+
+pedro-estaba-570681 (0, '')
+
+kelvin-silvania-570682 (0, '')
+
+ernesto-ciprian-570683 (0, '')
+
+alexandre-de-oliveira-570684 (0, '')
+
+kelvin-ortiz-570685 (0, '')
+
+candido-pimentel-570686 (0, '')
+
+emilio-sepulveda-570687 (0, '')
+
+romy-jimenez-570688 (0, '')
+
+wandy-guzman-570689 (0, '')
+
+danubio-gonzalez-570690 (0, '')
+
+wander-ramos-570691 (0, '')
+
+joan-abreu-570692 (0, '')
+
+luis-chirinos-570693 (0, '')
+
+jhonatan-javier-570694 (0, '')
+
+jaime-king-570695 (0, '')
+
+andres-martinez-570696 (0, '')
+
+eliezer-montano-570697 (0, '')
+
+ronny-puello-570698 (0, '')
+
+jose-ramos-570699 (0, '')
+
+deivy-estrada-570700 (0, '')
+
+alvaro-blanco-570701 (0, '')
+
+carlos-ramirez-570702 (0, '')
+
+franklin-paz-570703 (0, '')
+
+wilmer-portes-570705 (0, '')
+
+yeicok-calderon-570706 (0, '')
+
+edwin-fulgencio-570707 (0, '')
+
+ericson-leonora-570708 (0, '')
+
+abraham-ramos-570709 (0, '')
+
+brad-comer-570710 (0, '')
+
+francisco-duran-570711 (0, '')
+
+anthony-sanchez-570712 (0, '')
+
+ravel-santana-570713 (0, '')
+
+cesar-vargas-570714 (0, '')
+
+gian-arias-570715 (0, '')
+
+anderson-feliz-570716 (0, '')
+
+ramon-flores-570717 (0, '')
+
+alejandro-montas-570718 (0, '')
+
+josias-sanchez-570719 (0, '')
+
+jackson-valera-570720 (0, '')
+
+yorky-rojas-570721 (0, '')
+
+jose-castillo-570722 (0, '')
+
+gabriel-santana-570723 (0, '')
+
+jose-sayegh-570724 (0, '')
+
+elihoref-suniaga-570725 (0, '')
+
+jonesy-zarraga-570726 (0, '')
+
+dudley-leonora-570727 (0, '')
+
+nelson-gomez-570728 (0, '')
+
+henry-gonzalez-570729 (0, '')
+
+yigui-santana-570730 (0, '')
+
+jonathan-schoop-570731 (0, '')
+
+pedro-perez-570732 (0, '')
+
+sony-javier-570773 (0, '')
+
+keury-de-la-cruz-570774 (0, '')
+
+oscar-perez-570775 (0, '')
+
+aly-gonzalez-570776 (0, '')
+
+jose-jacome-570777 (0, '')
+
+adderly-rosa-570778 (0, '')
+
+hector-rodriguez-570779 (0, '')
+
+bruedlin-suero-570780 (0, '')
+
+pedro-silvestre-570781 (0, '')
+
+fredy-gamboa-570782 (0, '')
+
+ronald-luna-570783 (0, '')
+
+hector-garcia-570784 (0, '')
+
+jodaneli-carvajal-570785 (0, '')
+
+pedro-rodriguez-570786 (0, '')
+
+jesus-vasquez-570787 (0, '')
+
+yair-lopez-570788 (0, '')
+
+felix-bido-570789 (0, '')
+
+fernando-escarra-570790 (0, '')
+
+jose-jabalera-570791 (0, '')
+
+luis-domoromo-570792 (0, '')
+
+jairo-gomez-570793 (0, '')
+
+jeury-castillo-570794 (0, '')
+
+jorge-guzman-570795 (0, '')
+
+jose-martinez-570796 (0, '')
+
+jordy-lara-570797 (0, '')
+
+richard-vargas-570798 (0, '')
+
+christian-villanueva-570799 (0, '')
+
+julian-morillo-570800 (0, '')
+
+eric-canela-570801 (0, '')
+
+bienvenido-licien-570802 (0, '')
+
+ronny-gil-570803 (0, '')
+
+harlington-beltre-570804 (0, '')
+
+oscar-taveras-570805 (0, '')
+
+miguel-guzman-570806 (0, '')
+
+luis-perez-570807 (0, '')
+
+jose-pena-570808 (0, '')
+
+victor-encarnacion-570809 (0, '')
+
+lisalverto-bonilla-570810 (0, '')
+
+jorge-lorenzo-570811 (0, '')
+
+joan-pascual-570812 (0, '')
+
+george-ramirez-570813 (0, '')
+
+camilo-santana-570814 (0, '')
+
+adrian-sierra-570815 (0, '')
+
+jose-vasquez-570816 (0, '')
+
+felix-marine-570817 (0, '')
+
+yeisson-morales-570818 (0, '')
+
+jorge-castillo-570819 (0, '')
+
+lissander-mejia-570820 (0, '')
+
+joan-jimenez-570821 (0, '')
+
+julio-perez-570822 (0, '')
+
+eliecer-avila-570823 (0, '')
+
+wilder-aguirre-570824 (0, '')
+
+jhoanel-jimenez-570825 (0, '')
+
+angel-heredia-570826 (0, '')
+
+alberto-valdemora-570827 (0, '')
+
+dionicio-de-la-cruz-570828 (0, '')
+
+jean-ozoria-570829 (0, '')
+
+carlos-cedeno-570830 (0, '')
+
+yamal-thomas-570871 (0, '')
+
+juan-martin-570872 (0, '')
+
+ariel-soriano-570873 (0, '')
+
+luis-marte-570874 (0, '')
+
+waldo-rosario-570875 (0, '')
+
+hank-fuerst-570876 (0, '')
+
+santiago-chirino-570877 (0, '')
+
+roberto-perez-570878 (0, '')
+
+randol-rojas-570879 (0, '')
+
+jordan-caskey-570880 (0, '')
+
+john-malkoski-570881 (0, '')
+
+wilmer-santana-570882 (0, '')
+
+juan-paniagua-570883 (0, '')
+
+george-mieses-570884 (0, '')
+
+junior-nunez-570885 (0, '')
+
+ivan-brea-570886 (0, '')
+
+miguel-sanchez-570887 (0, '')
+
+luis-matias-570888 (0, '')
+
+westlonder-marcelino-570889 (0, '')
+
+bryan-brito-570890 (0, '')
+
+hector-jacobo-570891 (0, '')
+
+george-drullard-570892 (0, '')
+
+amaury-ceren-570908 (0, '')
+
+marlon-claveria-570909 (0, '')
+
+francisco-flores-570910 (0, '')
+
+ulises-gutierrez-570911 (0, '')
+
+ruben-mejia-570912 (0, '')
+
+uber-paz-570913 (0, '')
+
+carlos-pimentel-570914 (0, '')
+
+eugenio-reyes-570915 (0, '')
+
+elvin-tavarez-570916 (0, '')
+
+felix-cabrera-570917 (0, '')
+
+aaron-sillas-570918 (0, '')
+
+ken-comer-570919 (0, '')
+
+oriel-r-caicedo-570920 (0, '')
+
+eduardo-castillo-570921 (0, '')
+
+willie-garrison-570923 (0, '')
+
+berling-cruz-570924 (0, '')
+
+jose-murillo-570925 (0, '')
+
+michael-santana-570926 (0, '')
+
+greg-marotz-570927 (0, '')
+
+amable-nin-570928 (0, '')
+
+ernesto-silva-570929 (0, '')
+
+hector-herrera-570930 (0, '')
+
+elvis-familia-570931 (0, '')
+
+francisco-guzman-570932 (0, '')
+
+reynaldo-mateo-570933 (0, '')
+
+luis-mendez-570934 (0, '')
+
+roberto-perez-570935 (0, '')
+
+carlos-ramirez-570936 (0, '')
+
+jose-mateo-570937 (0, '')
+
+robert-morillo-570938 (0, '')
+
+carlos-oropeza-570939 (0, '')
+
+randy-jones-571028 (0, '')
+
+danniel-rodriguez-571029 (0, '')
+
+yunior-de-la-rosa-571030 (0, '')
+
+aaron-james-thompson-571031 (0, '')
+
+johan-santa-571032 (0, '')
+
+luis-parra-571033 (0, '')
+
+jose-ortega-571034 (0, '')
+
+william-cuevas-571035 (0, '')
+
+eduardo-medina-571036 (0, '')
+
+luis-mere-571037 (0, '')
+
+adriano-uribe-571038 (0, '')
+
+gustavo-parra-571039 (0, '')
+
+jesus-mejias-571040 (0, '')
+
+carlos-paez-571041 (0, '')
+
+frank-veleggia-571048 (0, '')
+
+jorge-dejesus-571049 (0, '')
+
+jake-brendle-571051 (0, '')
+
+alfredo-acosta-571053 (0, '')
+
+francisco-taveras-571054 (0, '')
+
+keith-dougherty-571055 (0, '')
+
+robert-guzman-571056 (0, '')
+
+frank-garces-571057 (0, '')
+
+domingo-agusvivas-571058 (0, '')
+
+angel-tapia-571059 (0, '')
+
+rosmer-nunez-571068 (0, '')
+
+alexis-salazar-571069 (0, '')
+
+alberto-reyes-571070 (0, '')
+
+leonel-gil-571071 (0, '')
+
+ramon-taveras-571072 (0, '')
+
+dreily-guerrero-571073 (0, '')
+
+luis-diaz-571074 (0, '')
+
+mike-marcum-571075 (0, '')
+
+freidderyx-ramirez-571116 (0, '')
+
+oscar-bravo-571188 (0, '')
+
+mike-walsh-571208 (0, '')
+
+smaily-borges-571228 (0, '')
+
+darlyn-figueroa-571229 (0, '')
+
+denis-estrada-571230 (0, '')
+
+bob-macdonald-571248 (0, '')
+
+gerson-cuevas-571308 (0, '')
+
+kelvin-gomez-571309 (0, '')
+
+jovany-lopez-571328 (0, '')
+
+jesus-barraza-571329 (0, '')
+
+derward-ruiz-571388 (0, '')
+
+alfredo-soto-571408 (0, '')
+
+frank-abbl-571428 (0, '')
+
+brian-adams-571429 (0, '')
+
+david-adams-571430 (0, '')
+
+matt-adams-571431 (0, '')
+
+hunter-adkins-571432 (0, '')
+
+roidany-aguila-571433 (0, '')
+
+eddie-ahorrio-571434 (0, '')
+
+daniel-allen-571435 (0, '')
+
+bradley-altbach-571436 (0, '')
+
+aaron-altherr-571437 (0, '')
+
+julian-alvarez-571438 (0, '')
+
+r-j-alvarez-571439 (0, '')
+
+jeff-ames-571440 (0, '')
+
+steve-ames-571441 (0, '')
+
+chase-anderson-571442 (0, '')
+
+dale-anderson-571443 (0, '')
+
+eric-anderson-571444 (0, '')
+
+carson-andrew-571445 (0, '')
+
+mark-appel-571446 (0, '')
+
+ovidio-aquino-571447 (0, '')
+
+nolan-arenado-571448 (0, '')
+
+matthew-arlington-571449 (0, '')
+
+cresencio-armijo-571450 (0, '')
+
+eric-arnett-571451 (0, '')
+
+clinton-asbury-571452 (0, '')
+
+edward-askew-571453 (0, '')
+
+michael-avery-571454 (0, '')
+
+jared-avidon-571455 (0, '')
+
+adam-bailey-571456 (0, '')
+
+luke-bailey-571457 (0, '')
+
+david-baker-571458 (0, '')
+
+martin-baker-571459 (0, '')
+
+nate-baker-571460 (0, '')
+
+geoffrey-baldwin-571461 (0, '')
+
+matthew-bannister-571463 (0, '')
+
+paul-bargas-571464 (0, '')
+
+jeremy-barnes-571465 (0, '')
+
+tucker-barnhart-571466 (0, '')
+
+steven-baron-571467 (0, '')
+
+jason-barry-571468 (0, '')
+
+jared-bartholomew-571469 (0, '')
+
+joseph-bartlinski-571470 (0, '')
+
+paul-barton-571471 (0, '')
+
+matt-bashore-571472 (0, '')
+
+buddy-baumann-571473 (0, '')
+
+dj-baxendale-571474 (0, '')
+
+chase-bebout-571475 (0, '')
+
+chris-beck-571476 (0, '')
+
+joseph-begel-571477 (0, '')
+
+kyle-bellamy-571478 (0, '')
+
+andrew-bellatti-571479 (0, '')
+
+justin-bellez-571480 (0, '')
+
+kyle-bellows-571481 (0, '')
+
+david-benson-571482 (0, '')
+
+gus-benusa-571483 (0, '')
+
+jon-berger-571484 (0, '')
+
+bryan-berglund-571485 (0, '')
+
+byron-berhel-571486 (0, '')
+
+zachary-bernard-571487 (0, '')
+
+david-berner-571488 (0, '')
+
+christopher-berry-571489 (0, '')
+
+thomas-berryhill-571490 (0, '')
+
+jean-guy-bilodeau-571491 (0, '')
+
+patrick-biondi-571492 (0, '')
+
+john-bivens-571493 (0, '')
+
+danny-black-571494 (0, '')
+
+shawn-blackwell-571496 (0, '')
+
+adam-blakey-571497 (0, '')
+
+nicolas-blanco-571498 (0, '')
+
+mike-blanke-571499 (0, '')
+
+bryan-blough-571500 (0, '')
+
+andrew-boaz-571501 (0, '')
+
+luke-bole-571502 (0, '')
+
+ryan-bollinger-571503 (0, '')
+
+joseph-bonadonna-571504 (0, '')
+
+trevor-borsak-571505 (0, '')
+
+justin-bour-571506 (0, '')
+
+marc-bourgeois-571507 (0, '')
+
+joshua-boyd-571509 (0, '')
+
+matthew-boyd-571510 (0, '')
+
+brett-brach-571511 (0, '')
+
+matt-branham-571512 (0, '')
+
+jason-braun-571513 (0, '')
+
+tim-brechbuehler-571514 (0, '')
+
+nathan-bridges-571516 (0, '')
+
+ryan-briggs-571517 (0, '')
+
+ethan-bright-571518 (0, '')
+
+corey-brooks-571519 (0, '')
+
+gavin-brooks-571520 (0, '')
+
+rex-brothers-571521 (0, '')
+
+andrew-brouillette-571522 (0, '')
+
+blake-brown-571523 (0, '')
+
+tony-bryant-571524 (0, '')
+
+kevin-bryant-571525 (0, '')
+
+ryan-buch-571526 (0, '')
+
+david-buchanan-571527 (0, '')
+
+eric-buckland-571528 (0, '')
+
+alex-burg-571529 (0, '')
+
+chase-burnette-571530 (0, '')
+
+sergio-burruel-571531 (0, '')
+
+garrett-bush-571532 (0, '')
+
+donavon-hendricks-456389 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+
+pedro-de-los-santos-570659 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.62)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CC1353+2233171]
+	Ordinal0 [0x00C58E31+1805873]
+	Ordinal0 [0x00B666FD+812797]
+	Ordinal0 [0x00B955DF+1005023]
+	Ordinal0 [0x00B957CB+1005515]
+	Ordinal0 [0x00BC7632+1209906]
+	Ordinal0 [0x00BB1AD4+1120980]
+	Ordinal0 [0x00BC59E2+1202658]
+	Ordinal0 [0x00BB18A6+1120422]
+	Ordinal0 [0x00B8A73D+960317]
+	Ordinal0 [0x00B8B71F+964383]
+	GetHandleVerifier [0x00F6A2C2+2728322]
+	GetHandleVerifier [0x00F5C184+2670660]
+	GetHandleVerifier [0x00D5102A+528106]
+	GetHandleVerifier [0x00D4FE10+523472]
+	Ordinal0 [0x00C6028C+1835660]
+	Ordinal0 [0x00C64758+1853272]
+	Ordinal0 [0x00C64845+1853509]
+	Ordinal0 [0x00C6E7E4+1894372]
+	BaseThreadInitThunk [0x7598FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7A6E+238]
+
+

@@ -13,7 +13,7 @@ from info.process_info import new_event_to_pitchers_dict, pitcher_primary_positi
 log_file_name = "4_insert_into_pitcher_log.txt"
 
 
-def update_event_pitchers_f(dml_instance, where_condition: List, set_value: str):
+def update(dml_instance, where_condition: List, set_value: str):
     where = ""
     for i, event in enumerate(where_condition):
         if i != 0:
@@ -242,9 +242,9 @@ def update_event_pitchers(dml_instance):
         if value[2] == 1:
             pa_list.append(key)
     table_name = "new_new_event_pitchers"
-    update_event_pitchers_f(dml_instance, table_name, is_hit_list, "is_hit")
-    update_event_pitchers_f(dml_instance, table_name, at_bat_list, "at_bat")
-    update_event_pitchers_f(dml_instance, table_name, pa_list, "pa")
+    update(dml_instance, table_name, is_hit_list, "is_hit")
+    update(dml_instance, table_name, at_bat_list, "at_bat")
+    update(dml_instance, table_name, pa_list, "pa")
 
 
 def stack_pitchers_from_event_pitchers(dml_instance: DML):
