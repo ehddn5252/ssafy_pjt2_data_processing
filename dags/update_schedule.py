@@ -38,6 +38,11 @@ def print_date():
     print(datetime.now())
     #print(date.today())
 
+def branch_path():
+    import statsapi
+    data = statsapi.standings_data(leagueId="103,104", division="all", include_wildcard=True, season=None,standingsTypes=None, date=None)
+    print(data)
+
 def update_scheduler2():
 
     import pymysql
@@ -118,10 +123,10 @@ with DAG(**dag_args) as dag:
         task_id = 'print_today',
         python_callable=print_date,
     )
-    branch = PythonOperator(
-        task_id = 'branch_test',
-        python_callable=branch_path
-    )
+    # branch = PythonOperator(
+    #     task_id = 'branch_test',
+    #     python_callable=branch_path
+    # )
 
     complete = BashOperator(
         task_id='complete_bash',
