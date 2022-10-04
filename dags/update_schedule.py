@@ -47,8 +47,8 @@ def update_scheduler2():
 
     import pymysql
     import statsapi
+    from datetime import date
     dml_instance = DML()
-    date.today()
     today = str(date.today())
     today_year = today[0:4]
     today_month = today[5:7]
