@@ -1,13 +1,25 @@
-import pymysql
-import statsapi
-from DB.DML import DML
+from datetime import datetime, timedelta
+
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import BranchPythonOperator
+from airflow.operators.python_operator import PythonOperator
+from airflow.utils.trigger_rule import TriggerRule
 
 
+def random_branch_path():
+    from random import randint
+
+    return "cal_a_id" if randint(1, 2) == 1 else "cal_m_id"
 
 
-# 1분에 한번씩 업데이트하기
-def update_schedule(dml_instance: DML):
+def update_schedule():
+    import pymysql
+    import statsapi
+    from DB.DML import DML
     from datetime import date
+    dml_instance = DML()
     date.today()
     today = str(date.today())
     today_year = today[0:4]
@@ -21,10 +33,12 @@ def update_schedule(dml_instance: DML):
     else:
         start_date = "01/01/" + today_year
 
-    for year in range(int(today_year), int(today_year)-1, -1):
-        print('year: ' + str(year))
+    for year in range(int(today_year), int(today_year) - 1, -1):
         games = statsapi.schedule(start_date=start_date, end_date=date)
         for i in games:
+            print("===========================")
+            print("start update schedules")
+            print("===========================")
             game_id = i.get("game_id")
             status = i.get("status")
             home_probable_pitcher = i.get("home_probable_pitcher")
@@ -53,10 +67,38 @@ def update_schedule(dml_instance: DML):
                 dml_instance.execute_update_sql(sql, vals)
             except pymysql.err.IntegrityError as e:
                 print(e)
+    result = x + y
+    print("x + y : ", result)
+    return "update schedule"
+
+def print_result(**kwargs):
+    r = kwargs["task_instance"].xcom_pull(key='calc_result')
+    print("message : ", r)
+    print("*" * 100)
+    print(kwargs)
 
 
-if __name__ == "__main__":
-    # 업데이트할 것: status, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note, away_score, home_score, current_inning, inning_state, winning_team, losing_team, winning_pitcher, losing_pitcher, summary
-    # 매일 업데이터할 것
-    dml_instance = DML()
-    update_schedule(dml_instance)
+def end_seq():
+    print("end")
+
+
+with DAG(**dag_args) as dag:
+    start = BashOperator(
+        task_id='start',
+        bash_command='echo "start!"',
+    )
+
+    update_schedule = PythonOperator(
+        task_id='update schedule',
+        python_callable=update_schedule,
+    )
+
+
+    complete = BashOperator(
+        task_id='complete_bash',
+        depends_on_past=False,
+        bash_command='echo "complete~!"',
+        trigger_rule=TriggerRule.NONE_FAILED
+    )
+
+    start >> update_schedule >> complete

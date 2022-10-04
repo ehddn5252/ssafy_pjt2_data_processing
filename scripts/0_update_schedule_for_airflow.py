@@ -1,13 +1,15 @@
-import pymysql
-import statsapi
-from DB.DML import DML
+
 
 
 
 
 # 1분에 한번씩 업데이트하기
-def update_schedule(dml_instance: DML):
+def update_schedule():
+    import pymysql
+    import statsapi
+    from DB.DML import DML
     from datetime import date
+    dml_instance = DML()
     date.today()
     today = str(date.today())
     today_year = today[0:4]
@@ -22,9 +24,11 @@ def update_schedule(dml_instance: DML):
         start_date = "01/01/" + today_year
 
     for year in range(int(today_year), int(today_year)-1, -1):
-        print('year: ' + str(year))
         games = statsapi.schedule(start_date=start_date, end_date=date)
         for i in games:
+            print("===========================")
+            print("start update schedules")
+            print("===========================")
             game_id = i.get("game_id")
             status = i.get("status")
             home_probable_pitcher = i.get("home_probable_pitcher")
