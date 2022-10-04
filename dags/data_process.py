@@ -22,9 +22,9 @@ default_args = {
 }
 
 dag_args = dict(
-    dag_id="mlb-data-updater",
+    dag_id="mlb-data-insert",
     default_args=default_args,
-    description='update mlbti',
+    description='insert schedule mlbti',
     schedule_interval = timedelta(days=3),
     start_date=datetime(2022,10,4),
     tags=['example-sj'],
@@ -105,8 +105,8 @@ with DAG(**dag_args) as dag:
         bash_command='echo "start"',
     )
 
-    update_schedule = PythonOperator(
-        task_id='update',
+    insert_schedule = PythonOperator(
+        task_id='insert schdule',
         python_callable=insert_scheduler,
     )
 
@@ -122,5 +122,5 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
 
-    start >> now_date >> update_schedule >> complete
+    start >> now_date >> insert_schedule >> complete
    #  start >> update_schedule >> complete
