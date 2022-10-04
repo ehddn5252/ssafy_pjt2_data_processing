@@ -106,7 +106,7 @@ with DAG(**dag_args) as dag:
     )
 
     insert_schedule = PythonOperator(
-        task_id='insert schdule',
+        task_id='insert_schdule',
         python_callable=insert_scheduler,
     )
 
