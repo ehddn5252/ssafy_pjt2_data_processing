@@ -58,9 +58,7 @@ class DML:
             print(sql)
         # cur = self.conn.cursor()
         self.cur.execute(sql, vals)
-        fetched = self.cur.fetchall()
-
-        return fetched
+        return self.cur.fetchall()
 
     def execute_insert_many_sql(self, sql, vals):
         # cur = self.conn.cursor()
