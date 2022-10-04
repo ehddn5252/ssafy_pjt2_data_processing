@@ -19,9 +19,9 @@ if __name__ == "__main__":
         games = statsapi.schedule(start_date='01/01/' + str(year), end_date='12/31/' + str(year))
         print(len(games))
         for i in games:
-            if i.get("game_id") not in game_id_list:
-                print("it is in schedule")
-                continue
+            # if i.get("game_id") not in game_id_list:
+            #     print("it is in schedule")
+            #     continue
             game_id = i.get("game_id")
             game_datetime = i.get("game_datetime")
             game_date = i.get("game_date")

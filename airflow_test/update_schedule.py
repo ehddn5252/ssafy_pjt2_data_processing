@@ -8,10 +8,24 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.trigger_rule import TriggerRule
 
 
-def random_branch_path():
-    from random import randint
+default_args = {
+    'owner': 'owner-name',
+    'depends_on_past': False,
+    'email': ['your-email@g.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=15),
+}
 
-    return "cal_a_id" if randint(1, 2) == 1 else "cal_m_id"
+dag_args = dict(
+    dag_id="tutorial-python-op",
+    default_args=default_args,
+    description='tutorial DAG python',
+    schedule_interval=timedelta(minutes=50),
+    start_date=datetime(2022, 10,3),
+    tags=['example-sj'],
+)
 
 
 def update_schedule():
@@ -67,8 +81,7 @@ def update_schedule():
                 dml_instance.execute_update_sql(sql, vals)
             except pymysql.err.IntegrityError as e:
                 print(e)
-    result = x + y
-    print("x + y : ", result)
+
     return "update schedule"
 
 def print_result(**kwargs):
@@ -88,11 +101,10 @@ with DAG(**dag_args) as dag:
         bash_command='echo "start!"',
     )
 
-    update_schedule = PythonOperator(
-        task_id='update schedule',
-        python_callable=update_schedule,
-    )
-
+    # update_schedule = PythonOperator(
+    #     task_id='update schedule',
+    #     python_callable=update_schedule,
+    # )
 
     complete = BashOperator(
         task_id='complete_bash',
@@ -101,4 +113,4 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
 
-    start >> update_schedule >> complete
+    start >> complete

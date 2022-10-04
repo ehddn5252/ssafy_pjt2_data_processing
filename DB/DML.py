@@ -5,6 +5,7 @@ from typing import List
 class DML:
     conn = DB_controller.e202_con
     cur = conn.cursor()
+
     # def get_select_from_where(self, column_name: str, table_name: str, condition: str = ""):
     #
     #     # STEP 3: Connection 으로부터 Cursor 생성
@@ -29,33 +30,41 @@ class DML:
     def close(self):
         self.conn.close()
 
-
     def commit(self):
         self.conn.commit()
 
-    def execute_update_sql(self,sql,vars):
-        self.cur.execute(sql, vars)
+    def fetch_all(self):
+        return self.cur.fetchall();
+
+    def execute(self, sql, vals=[]):
+        if vals == []:
+            self.cur.execute(sql)
+        else:
+            self.cur.execute(sql, vals)
+
+    def execute_update_sql(self, sql, vals):
+        self.cur.execute(sql, vals)
         self.conn.commit()
 
-    def execute_insert_sql(self, sql, vars,is_print=False):
+    def execute_insert_sql(self, sql, vals, is_print=False):
         if is_print:
             print(sql)
 
-        self.cur.execute(sql, vars)
+        self.cur.execute(sql, vals)
         self.conn.commit()
 
-    def execute_fetch_sql(self, sql, vars, is_print=False):
+    def execute_fetch_sql(self, sql, vals, is_print=False):
         if is_print:
             print(sql)
         # cur = self.conn.cursor()
-        self.cur.execute(sql, vars)
+        self.cur.execute(sql, vals)
         fetched = self.cur.fetchall()
 
         return fetched
 
-    def execute_insert_many_sql(self, sql,vars):
+    def execute_insert_many_sql(self, sql, vals):
         # cur = self.conn.cursor()
-        self.cur.executemany(sql,vars)
+        self.cur.executemany(sql, vals)
         self.conn.commit()
 
     def execute_sql(self, sql, is_print=False):
@@ -65,7 +74,7 @@ class DML:
         self.cur.execute(sql)
         self.conn.commit()
 
-    def get_from_sql(self,sql):
+    def get_from_sql(self, sql):
         # cur = self.conn.cursor()
         self.cur.execute(sql)
 
@@ -73,7 +82,7 @@ class DML:
         rows = self.cur.fetchall()
         return rows
 
-    def get_select_from_where(self, column_names: List, table_name: str, condition: str = "",print_sql=False):
+    def get_select_from_where(self, column_names: List, table_name: str, condition: str = "", print_sql=False):
 
         # STEP 3: Connection 으로부터 Cursor 생성
         # cur = self.conn.cursor()
@@ -133,4 +142,3 @@ class DML:
         self.conn.commit()
         # STEP 5: DB 연결 종료
         return rows
-

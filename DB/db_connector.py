@@ -7,4 +7,4 @@ class DB_controller:
     # local_con = pymysql.connect(host=local_db_infos.host, user=local_db_infos.user, password=local_db_infos.password, db=local_db_infos.db, charset='utf8')  # 한글처리 (charset = 'utf8')
 
     e202_con = pymysql.connect(host=e202_db_infos.host, user=e202_db_infos.user, password=e202_db_infos.password,
-                          db=e202_db_infos.db, charset='utf8')  # 한글처리 (charset = 'utf8')
+                          db=e202_db_infos.db, charset='utf8', connect_timeout=600, write_timeout=600, read_timeout=600)  # 한글처리 (charset = 'utf8')
