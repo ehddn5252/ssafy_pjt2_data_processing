@@ -28,7 +28,9 @@
     - 기존 방식: 약 1시간
 7. event_pitchers와 event_batters에서 pitchers와 batters 테이블(시즌별 선수 게임 데이터 집계) 쌓기
    110만건 -> 43000건, 100만건 -> 4만건
-    - 기존 방식: 3분
+    - 기존 방식: 3분 + 8시간
+
+
 ## 데이터 업데이트
 ### [5초마다 업데이트해야 할 정보] 
 - 경기 실시간 중계 데이터는 5초마다 업데이트해야 합니다.
@@ -47,7 +49,7 @@
         - tmp_event to tmp_event_pitchers and tmp_event to tmp_event_batters
         - event_pitchers to pitchers and event_batters to batters
     - update 로직은 pitchers 의 해당 시즌 정보를 가져와서 어제 경기에서 나온 것만큼 + 해서 다시 넣기
-
+ 
 
 ## 지금 해야 할 것
 1. 데이터 처리 과정 파이썬으로 다 정리하기
