@@ -5,6 +5,7 @@ from typing import List
 class DML:
     conn = DB_controller.e202_con
     cur = conn.cursor()
+
     # def get_select_from_where(self, column_name: str, table_name: str, condition: str = ""):
     #
     #     # STEP 3: Connection 으로부터 Cursor 생성
