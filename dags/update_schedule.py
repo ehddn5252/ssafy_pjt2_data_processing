@@ -26,7 +26,7 @@ dag_args = dict(
     dag_id="update-scheduler",
     default_args=default_args,
     description='update mlbti',
-    schedule_interval = timedelta(minutes=5),
+    schedule_interval = timedelta(minutes=2),
     start_date=datetime(2022,10,4),
     tags=['example-sj'],
 )
