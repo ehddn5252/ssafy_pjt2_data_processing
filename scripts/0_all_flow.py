@@ -500,11 +500,8 @@ def stack_batters_from_event_batters(dml_instance):
 if __name__ == "__main__":
     dml_instance = DML()
     ddl_instance = DDL()
-    
-    # 1 분에 한 번씩 스케줄에 현재정보 받아와야함 (airflow로 함)
-    # update_schedule(dml_instance)
 
-    # 맨 처음 한번 스케줄링
+    # 맨 처음 한번
     DDL.create_table(table_name='events')
     DDL.create_table(table_name='event_pitchers')
     DDL.create_table(table_name='pitchers')

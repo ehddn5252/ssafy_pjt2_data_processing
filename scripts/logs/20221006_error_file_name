@@ -1,0 +1,78 @@
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`mlbti`.`tmp_new_new_pitchers`, CONSTRAINT `tmp_new_new_pitchers_baseball_players_game_uid` FOREIGN KEY (`player_uid`) REFERENCES `baseball_players` (`uid`))')
+

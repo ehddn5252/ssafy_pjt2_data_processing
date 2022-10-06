@@ -8,7 +8,7 @@ from DB.DML import DML
 # 1분에 한번씩 업데이트하기
 def update_schedule(dml_instance: DML):
     from datetime import date
-    date.today()
+    print(date.today())
     today = str(date.today())
     today_year = today[0:4]
     today_month = today[5:7]
