@@ -6,7 +6,8 @@ from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import BranchPythonOperator
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.trigger_rule import TriggerRule
-import sys,os
+import sys, os
+
 sys.path.append(os.getcwd())
 sys.path.append("/home/ubuntu/airflow/ssafy_pjt2_data_processing")
 
@@ -23,28 +24,31 @@ default_args = {
 }
 
 dag_args = dict(
-    dag_id="update-scheduler",
+    dag_id="update-rank",
     default_args=default_args,
-    description='update mlbti',
-    schedule_interval = timedelta(days=1),
-    start_date=datetime(2022,10,4),
+    description='update league rank',
+    schedule_interval=timedelta(days=1),
+    start_date=datetime(2022, 10, 4),
     tags=['example-sj'],
 )
+
 
 def print_date():
     from datetime import date
     from random import randint
     print("test is running")
     print(datetime.now())
-    #print(date.today())
+    # print(date.today())
+
 
 def branch_path():
     import statsapi
-    data = statsapi.standings_data(leagueId="103,104", division="all", include_wildcard=True, season=None,standingsTypes=None, date=None)
+    data = statsapi.standings_data(leagueId="103,104", division="all", include_wildcard=True, season=None,
+                                   standingsTypes=None, date=None)
     print(data)
 
-def update_rank():
 
+def update_rank():
     import statsapi
     from datetime import date
     '''
@@ -99,7 +103,6 @@ def update_rank():
     dml_instance.execute_insert_many_sql(sql, vars)
 
 
-
 def print_result(**kwargs):
     r = kwargs["task_instance"].xcom_pull(key='calc_result')
     print("message : ", r)
@@ -117,13 +120,13 @@ with DAG(**dag_args) as dag:
         bash_command='echo "start"',
     )
 
-    update_schedule = PythonOperator(
+    update_league_rank = PythonOperator(
         task_id='update',
         python_callable=update_rank,
     )
 
-    now_date = PythonOperator (
-        task_id = 'print_today',
+    now_date = PythonOperator(
+        task_id='print_today',
         python_callable=print_date,
     )
     # branch = PythonOperator(
@@ -138,5 +141,5 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
 
-    start >> now_date >> update_schedule >> complete
-   #  start >> update_schedule >> complete
+    start >> now_date >> update_league_rank >> complete
+#  start >> update_schedule >> complete
