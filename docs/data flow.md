@@ -36,11 +36,11 @@
 
 6. events table의 데이터를 가공, 집계하여 event_pitchers와 event_batters (시즌별, 이밴트, 상대 손 별 타자 성적 DB)생성 및 데이터 쌓기
     - 2300만건 -> event_pitchers 약 110만건 evnet_batters 약 100만건 
-    - 기존 방식: 약 1시간
+    - 기존 방식: 약 10분
 
 7. event_pitchers와 event_batters에서 pitchers와 batters 테이블(시즌별 선수 게임 데이터 집계) 쌓기
    110만건 -> 43000건, 100만건 -> 4만건
-    - 기존 방식: 3분 + 8시간
+    - 기존 방식: 1시간 + 8시간
 
 
 ## 데이터 업데이트
