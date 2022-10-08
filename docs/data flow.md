@@ -6,7 +6,7 @@
 
 ### 크롤링
 1. 크롤링을 통한 선수 이미지 데이터 쌓기
-- baseball_player DB에서 player_uid에 맞는 img_url 을 저장하는 로직
+- baseball_player DB 에서 player_uid 에 맞는 img_url 을 저장하는 로직
 - 3~5초에 하나 크롤링, 총 15만건, 60만초 -> 166.7시간 걸림
 
 ### statAPI를 통한 데이터 쌓기
@@ -34,11 +34,11 @@
     - raw_data 12만건(100GB) -> 2340만건(3GB)의 events table 로 변환
     - 기존 방식: 약 16시간
 
-6. events table의 데이터를 가공, 집계하여 event_pitchers와 event_batters (시즌별, 이밴트, 상대 손 별 타자 성적 DB)생성 및 데이터 쌓기
+6. events table 의 데이터를 가공, 집계하여 event_pitchers 와 event_batters (시즌별, 이밴트, 상대 손 별 타자 성적 DB)생성 및 데이터 쌓기
     - 2300만건 -> event_pitchers 약 110만건 evnet_batters 약 100만건 
     - 기존 방식: 약 10분
 
-7. event_pitchers와 event_batters에서 pitchers와 batters 테이블(시즌별 선수 게임 데이터 집계) 쌓기
+7. event_pitchers 와 event_batters 에서 pitchers 와 batters 테이블(시즌별 선수 게임 데이터 집계) 쌓기
    110만건 -> 43000건, 100만건 -> 4만건
     - 기존 방식: 1시간 + 8시간
 
@@ -55,8 +55,8 @@
 - 어제 경기 정보 (schedules 에 경기 결과 업데이트) 
 - yesterday raw_data 를 pitchers and baseball 로 만들기
     - 어제 경기한 정보(win team,lose team, home_team score, away_team score)를 
-     raw_data 에서 pitchers와 batters table로 데이터 업데이트 작업
-    - 데이터 처리 flow는 다음과 같다. 
+     raw_data 에서 pitchers 와 batters table 로 데이터 업데이트 작업
+    - 데이터 처리 flow 는 다음과 같다. 
         - raw_data to tmp_event
         - tmp_event to tmp_event_pitchers and tmp_event to tmp_event_batters
         - event_pitchers to pitchers and event_batters to batters

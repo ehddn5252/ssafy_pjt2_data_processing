@@ -1,5 +1,5 @@
 from DB.DML import DML
-from core.crwalingmlbimg import CrawlingMlbImg
+from crawling.crawlingmlbimg import CrawlingMlbImg
 
 if __name__ == "__main__":
     dml_instance = DML()
