@@ -443,8 +443,7 @@ def delete_pitchers_season_data():
     delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
     dml_instance.execute(delete_sql)
     dml_instance.commit()
-    dml_instance.close()
-
+    
 
 def update_pitcher_position():
     '''
@@ -455,7 +454,6 @@ def update_pitcher_position():
     sql = f"update {PITCHERS_TABLE} set position = 'P' where primary_position_abbreviation is null"
     dml_instance.execute(sql)
     dml_instance.commit()
-    dml_instance.close()
 
 
 def truncate_tables():
@@ -535,6 +533,6 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _update_pitcher_position >> complete
+    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >>_delete_pitchers_season_data >>_stack_pitchers_from_event_pitchers >>  complete
 
     # start >> now_date >> stack_schedules >> complete
