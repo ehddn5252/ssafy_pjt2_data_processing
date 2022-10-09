@@ -252,6 +252,7 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
 
         Logger.save_error_log_to_file(f"{e}", log_file_name)
         print(f"{e} except")
+    dml_instance.close()
 
 
 def stack_raw_data():
@@ -401,6 +402,7 @@ def update_event_pitchers_execute(dml_instance, table_name, where_condition: Lis
     sql += where
     # sql = f"update event_pitchers set {set_value} = 0" # reset
     dml_instance.execute_sql(sql)
+    dml_instance.close()
 
 
 def update_event_pitchers():
