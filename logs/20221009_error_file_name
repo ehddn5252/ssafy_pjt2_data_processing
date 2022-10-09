@@ -1,0 +1,926 @@
+jim-baba-666409 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+maikel-caceres-666731 (2013, 'Lost connection to MySQL server during query')
+
+christopher-horne-666732 (0, '')
+
+mitch-lightbody-666733 (0, '')
+
+ian-reval-666734 (0, '')
+
+neil-medlin-666735 (0, '')
+
+raymond-rodriguez-666740 (0, '')
+
+pavel-quesada-666741 (0, '')
+
+marshall-crawford-666742 (0, '')
+
+kelton-caldwell-666743 (0, '')
+
+jhony-brito-666745 (0, '')
+
+rogelio-bernal-666746 (0, '')
+
+davis-page-666747 (0, '')
+
+mitch-neunborn-666748 (0, '')
+
+josh-lee-666749 (0, '')
+
+paul-rudd-666750 (0, '')
+
+vin-scully-666751 (0, '')
+
+gary-thorne-666752 (0, '')
+
+greg-brown-666753 (0, '')
+
+howie-rose-666754 (0, '')
+
+matt-forman-666755 (0, '')
+
+carlos-moreno-666760 (0, '')
+
+osvaldo-santilien-666761 (0, '')
+
+antonio-police-666762 (0, '')
+
+rayniel-moreno-666763 (0, '')
+
+geraldo-perez-666764 (0, '')
+
+orlando-noriega-666765 (0, '')
+
+stiward-aquino-666766 (0, '')
+
+leonel-goitia-666767 (0, '')
+
+anderson-pilar-666768 (0, '')
+
+omar-martinez-666769 (0, '')
+
+ulises-martinez-666770 (0, '')
+
+yender-silva-666771 (0, '')
+
+edgar-escalona-666772 (0, '')
+
+jose-quero-666773 (0, '')
+
+mike-torres-666774 (0, '')
+
+carlos-perdomo-666775 (0, '')
+
+ramiro-rodriguez-666776 (0, '')
+
+alfredo-angarita-666777 (0, '')
+
+juan-corniel-666778 (0, '')
+
+dennicher-carrasco-666779 (0, '')
+
+enderson-rodriguez-666780 (0, '')
+
+luis-pasen-666781 (0, '')
+
+bryan-castillo-666782 (0, '')
+
+yusniel-diaz-666783 (0, '')
+
+omar-estevez-666784 (0, '')
+
+harold-chirino-666785 (0, '')
+
+henry-medina-666786 (0, '')
+
+edwin-sano-666787 (0, '')
+
+guillermo-granadillo-666788 (0, '')
+
+angel-chalas-666789 (0, '')
+
+victor-isturiz-666790 (0, '')
+
+david-lozano-666791 (0, '')
+
+christopher-madera-666792 (0, '')
+
+jorge-martinez-666793 (0, '')
+
+jeison-rodriguez-666794 (0, '')
+
+eulises-sanchez-666795 (0, '')
+
+jaison-vilera-666796 (0, '')
+
+spencer-mahoney-666797 (0, '')
+
+daniel-marten-666798 (0, '')
+
+luis-almanzar-666799 (0, '')
+
+leonel-aponte-666800 (0, '')
+
+rodolfo-castro-666801 (0, '')
+
+joel-cesar-666802 (0, '')
+
+oliver-garcia-666803 (0, '')
+
+angel-martinez-666804 (0, '')
+
+aaron-lezama-666805 (0, '')
+
+feliberto-bonilla-666806 (0, '')
+
+edinson-trinidad-666807 (0, '')
+
+camilo-doval-666808 (0, '')
+
+jesus-reyes-666809 (0, '')
+
+alfredo-balbuena-666810 (0, '')
+
+oliver-batista-666811 (0, '')
+
+yunior-martinez-666812 (0, '')
+
+juan-pascal-666813 (0, '')
+
+travis-tingle-666814 (0, '')
+
+t-j-bennett-666815 (0, '')
+
+ryohei-fujiwara-666816 (0, '')
+
+duilio-ochoa-666817 (0, '')
+
+luis-frias-666818 (0, '')
+
+michael-o-neal-666819 (0, '')
+
+george-carlo-666820 (0, '')
+
+sharon-lockwood-666821 (0, '')
+
+steve-chase-666822 (0, '')
+
+sharon-lockwood-666824 (0, '')
+
+jake-cairns-666825 (0, '')
+
+daniel-desimone-666826 (0, '')
+
+scott-quinlan-666827 (0, '')
+
+matt-siegel-666829 (0, '')
+
+carlos-cardoza-666830 (0, '')
+
+dr-josiah-igono-666831 (0, '')
+
+sean-fields-666832 (0, '')
+
+chris-olson-666833 (0, '')
+
+michael-phillips-666834 (0, '')
+
+elier-sanchez-666835 (0, '')
+
+danilo-dejesus-666836 (0, '')
+
+tanner-dodson-663541 (2013, 'Lost connection to MySQL server during query')
+
+bryan-hudson-663542 (0, '')
+
+corey-zangari-663543 (0, '')
+
+lj-talley-663544 (0, '')
+
+reggie-pruitt-663545 (0, '')
+
+sean-hjelle-663546 (0, '')
+
+olajide-oloruntimilehin-663548 (0, '')
+
+sam-crocker-663549 (0, '')
+
+trey-cabbage-663550 (0, '')
+
+marrick-crouse-663551 (0, '')
+
+matt-tola-663552 (0, '')
+
+zane-gill-663553 (0, '')
+
+casey-mize-663554 (0, '')
+
+beau-brundage-663555 (0, '')
+
+shane-mcclanahan-663556 (0, '')
+
+isaiah-cullum-663557 (0, '')
+
+jovani-moran-663558 (0, '')
+
+bailey-falter-663559 (0, '')
+
+jack-schofield-663560 (0, '')
+
+gage-canning-663561 (0, '')
+
+noah-davis-663562 (0, '')
+
+imani-abdullah-663563 (0, '')
+
+richard-ciufo-663564 (0, '')
+
+xavier-legrant-663565 (0, '')
+
+peyton-culbertson-663566 (0, '')
+
+peter-lambert-663567 (0, '')
+
+stephen-kolek-663568 (0, '')
+
+donny-everett-663569 (0, '')
+
+eli-nabholz-663570 (0, '')
+
+beau-o-connell-663571 (0, '')
+
+jonah-llanusa-663572 (0, '')
+
+desmond-chumley-663573 (0, '')
+
+tony-santillan-663574 (0, '')
+
+te-kwaan-whyte-663575 (0, '')
+
+connor-bennett-663576 (0, '')
+
+liam-jenkins-663577 (0, '')
+
+jensen-elliott-663578 (0, '')
+
+willie-carter-663579 (0, '')
+
+scotty-bradley-663581 (0, '')
+
+jordan-gubelman-663582 (0, '')
+
+kobi-candaroma-663583 (0, '')
+
+hayden-senger-663584 (0, '')
+
+bakari-gayle-663585 (0, '')
+
+austin-riley-663586 (0, '')
+
+fitz-stadler-663587 (0, '')
+
+connor-eason-663588 (0, '')
+
+matthew-mcgarry-663589 (0, '')
+
+eriq-white-663590 (0, '')
+
+dominic-dicaprio-663591 (0, '')
+
+joseph-arce-663592 (0, '')
+
+evan-mather-663593 (0, '')
+
+tyler-o-dell-663594 (0, '')
+
+josh-hiatt-663595 (0, '')
+
+hunter-bowling-663596 (0, '')
+
+adam-hill-663597 (0, '')
+
+michael-mcadoo-663598 (0, '')
+
+j-d-williams-663599 (0, '')
+
+d-j-artis-663600 (0, '')
+
+sean-wymer-663601 (0, '')
+
+ryan-cyr-663602 (0, '')
+
+solomon-bates-663603 (0, '')
+
+brandon-lockridge-663604 (0, '')
+
+garrett-whitley-663605 (0, '')
+
+michael-benson-663606 (0, '')
+
+adam-sasser-663607 (0, '')
+
+taylor-havlicek-663608 (0, '')
+
+luken-baker-663609 (0, '')
+
+daniel-amaral-663610 (0, '')
+
+nick-madrigal-663611 (0, '')
+
+ryan-shetter-663612 (0, '')
+
+kyle-marman-663613 (0, '')
+
+isaiah-carranza-663614 (0, '')
+
+tanner-arst-663615 (0, '')
+
+trevor-larnach-663616 (0, '')
+
+frankie-bartow-663617 (0, '')
+
+josh-stowers-663618 (0, '')
+
+brandon-mulier-663619 (0, '')
+
+nick-swan-663620 (0, '')
+
+shane-ritter-663621 (0, '')
+
+jackson-lueck-663622 (0, '')
+
+jake-irvin-663623 (0, '')
+
+ryan-mountcastle-663624 (0, '')
+
+tyler-williams-663625 (0, '')
+
+austin-moore-663626 (0, '')
+
+clay-helvey-663627 (0, '')
+
+john-aiello-663628 (0, '')
+
+ethan-small-663629 (0, '')
+
+ryan-mckenna-663630 (0, '')
+
+josh-magee-663631 (0, '')
+
+troy-miller-663632 (0, '')
+
+evan-sperling-663633 (0, '')
+
+kyle-dean-663634 (0, '')
+
+caleb-gilbert-663635 (0, '')
+
+sam-finnerty-663636 (0, '')
+
+nick-lee-663637 (0, '')
+
+porter-gustin-663638 (0, '')
+
+cole-anderson-663639 (0, '')
+
+joey-bend-663640 (0, '')
+
+chandler-newman-663641 (0, '')
+
+josh-smith-663642 (0, '')
+
+chad-luensmann-663643 (0, '')
+
+kale-breaux-663644 (0, '')
+
+ryan-karstetter-663645 (0, '')
+
+andrew-williamson-663646 (0, '')
+
+ke-bryan-hayes-663647 (0, '')
+
+justin-marsden-663648 (0, '')
+
+nolan-watson-663649 (0, '')
+
+o-neal-lochridge-663650 (0, '')
+
+jack-mcpherson-663651 (0, '')
+
+jake-simon-663652 (0, '')
+
+cole-acosta-663653 (0, '')
+
+gian-martellini-663654 (0, '')
+
+eric-cole-663655 (0, '')
+
+kyle-tucker-663656 (0, '')
+
+garrett-davila-663657 (0, '')
+
+thad-ward-663658 (0, '')
+
+hunter-smith-663659 (0, '')
+
+jack-conley-663660 (0, '')
+
+anthony-dahl-663661 (0, '')
+
+daz-cameron-663662 (0, '')
+
+shane-potter-663663 (0, '')
+
+desmond-lindsay-663664 (0, '')
+
+ty-harpenau-663665 (0, '')
+
+cj-ballard-663666 (0, '')
+
+cole-mckay-663667 (0, '')
+
+dj-neal-663668 (0, '')
+
+brayden-blair-663669 (0, '')
+
+jonathan-hughes-663670 (0, '')
+
+nic-enright-663671 (0, '')
+
+zeek-white-663672 (0, '')
+
+tyson-messer-663673 (0, '')
+
+mason-fox-663674 (0, '')
+
+tyler-witt-663675 (0, '')
+
+zeke-dodson-663676 (0, '')
+
+alex-reyes-663677 (0, '')
+
+colton-eastman-663678 (0, '')
+
+trysten-barlow-663679 (0, '')
+
+braun-miller-663680 (0, '')
+
+jarod-bayless-663681 (0, '')
+
+mike-salvatore-663682 (0, '')
+
+ike-schlabach-663683 (0, '')
+
+adam-wolf-663684 (0, '')
+
+garrett-zech-663685 (0, '')
+
+cody-deason-663686 (0, '')
+
+hogan-harris-663687 (0, '')
+
+tyler-murray-663688 (0, '')
+
+casey-demko-663689 (0, '')
+
+ethan-skender-663690 (0, '')
+
+bobby-gauvreau-663691 (0, '')
+
+jalen-miller-663692 (0, '')
+
+joey-bart-663698 (0, '')
+
+coby-roddy-663699 (0, '')
+
+andrew-miller-663700 (0, '')
+
+andreus-faltesek-garnica-663701 (0, '')
+
+dylan-crutcher-663702 (0, '')
+
+anthony-peroni-663703 (0, '')
+
+james-mcarthur-663704 (0, '')
+
+truman-brown-663705 (0, '')
+
+austin-pharr-663706 (0, '')
+
+tyler-wyatt-663707 (0, '')
+
+shane-mcclanahan-663556 (2013, 'Lost connection to MySQL server during query')
+
+isaiah-cullum-663557 (0, '')
+
+daz-cameron-663662 (2013, 'Lost connection to MySQL server during query')
+
+shane-potter-663663 (0, '')
+
+desmond-lindsay-663664 (0, '')
+
+ty-harpenau-663665 (0, '')
+
+jim-baba-666409 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+daniel-desimone-666826 (2013, 'Lost connection to MySQL server during query')
+
+scott-quinlan-666827 (0, '')
+
+matt-siegel-666829 (0, '')
+
+carlos-cardoza-666830 (0, '')
+
+dr-josiah-igono-666831 (0, '')
+
+sean-fields-666832 (0, '')
+
+chris-olson-666833 (0, '')
+
+michael-phillips-666834 (0, '')
+
+elier-sanchez-666835 (0, '')
+
+danilo-dejesus-666836 (0, '')
+
+takuro-ito-666837 (0, '')
+
+george-callil-666838 (0, '')
+
+kim-robertson-666840 (0, '')
+
+julio-martinez-666841 (0, '')
+
+juan-torres-666842 (0, '')
+
+taylor-wright-666843 (0, '')
+
+anthony-cheky-666844 (0, '')
+
+jhonneyver-gutierrez-666845 (0, '')
+
+mitch-holding-666846 (0, '')
+
+jose-roca-666847 (0, '')
+
+robert-valera-666848 (0, '')
+
+patrick-mincey-666849 (0, '')
+
+josh-lifrak-666850 (0, '')
+
+rey-fuentes-666851 (0, '')
+
+nick-krall-666855 (0, '')
+
+sam-grossman-666856 (0, '')
+
+louis-cohen-666857 (0, '')
+
+junior-arrojo-666858 (0, '')
+
+michael-bates-666859 (0, '')
+
+eduardo-guzman-666860 (0, '')
+
+adriam-castillo-666862 (0, '')
+
+jeisson-fana-666863 (0, '')
+
+gabe-noyalis-666864 (0, '')
+
+tommy-kawamura-666865 (0, '')
+
+drew-french-666866 (0, '')
+
+dillon-lawson-666867 (0, '')
+
+john-stevens-666868 (0, '')
+
+stephen-vaughan-666869 (0, '')
+
+donald-rogers-666870 (0, '')
+
+richard-wilson-666871 (0, '')
+
+edward-watts-666872 (0, '')
+
+ricky-schwartz-666873 (0, '')
+
+john-olerud-666874 (0, '')
+
+jacinto-garcia-666875 (0, '')
+
+matt-blake-666880 (0, '')
+
+brian-miles-666881 (0, '')
+
+oscar-gutierrez-666882 (0, '')
+
+freddy-tiburico-666883 (0, '')
+
+tighe-dickinson-666884 (0, '')
+
+berbani-martinez-666886 (0, '')
+
+d-j-wallace-666887 (0, '')
+
+yaisel-sierra-666888 (0, '')
+
+ramon-lub-666889 (0, '')
+
+frank-d-aversa-666891 (0, '')
+
+alex-shteinberg-666893 (0, '')
+
+shaun-cole-666894 (0, '')
+
+daniel-cepin-666895 (0, '')
+
+doug-banks-666896 (0, '')
+
+carlos-sequera-666897 (0, '')
+
+cesar-serna-666898 (0, '')
+
+santos-saldivar-666899 (0, '')
+
+jonathan-armenta-666900 (0, '')
+
+sean-bardenett-666905 (0, '')
+
+jake-alu-666906 (0, '')
+
+connor-bacon-666907 (0, '')
+
+chris-balogh-666908 (0, '')
+
+thomas-lane-666909 (0, '')
+
+dan-metzdorf-666910 (0, '')
+
+jack-nelson-666911 (0, '')
+
+zach-stromberg-666912 (0, '')
+
+john-witkowski-666913 (0, '')
+
+sawyer-gieseke-666914 (0, '')
+
+bobby-dalbec-666915 (0, '')
+
+justin-behnke-666916 (0, '')
+
+louis-boyd-666917 (0, '')
+
+ryan-haug-666918 (0, '')
+
+cody-ramer-666919 (0, '')
+
+tanner-dobson-670728 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+frank-german-681464 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+kris-deuren-693890 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+satchell-norman-695708 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+mike-mackey-802436 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00751353+2233171]
+	Ordinal0 [0x006E8E31+1805873]
+	Ordinal0 [0x005F66FD+812797]
+	Ordinal0 [0x006255DF+1005023]
+	Ordinal0 [0x006257CB+1005515]
+	Ordinal0 [0x00657632+1209906]
+	Ordinal0 [0x00641AD4+1120980]
+	Ordinal0 [0x006559E2+1202658]
+	Ordinal0 [0x006418A6+1120422]
+	Ordinal0 [0x0061A73D+960317]
+	Ordinal0 [0x0061B71F+964383]
+	GetHandleVerifier [0x009FA2C2+2728322]
+	GetHandleVerifier [0x009EC184+2670660]
+	GetHandleVerifier [0x007E102A+528106]
+	GetHandleVerifier [0x007DFE10+523472]
+	Ordinal0 [0x006F028C+1835660]
+	Ordinal0 [0x006F4758+1853272]
+	Ordinal0 [0x006F4845+1853509]
+	Ordinal0 [0x006FE7E4+1894372]
+	BaseThreadInitThunk [0x76206739+25]
+	RtlGetFullPathName_UEx [0x776B8FD2+1218]
+	RtlGetFullPathName_UEx [0x776B8F9D+1165]
+
+
+hunter-hargrove-803650 (0, '')
+
+landon-beidelschies-804860 (0, '')
+
+carter-campau-804861 (0, '')
+
+patrick-steitz-804862 (0, '')
+
+wyatt-danilowicz-804863 (0, '')
+
+keegan-rodin-804864 (0, '')
+
+blane-nestle-804865 (0, '')
+
+andrew-hendrickx-804866 (0, '')
+
+evan-whiteaker-804867 (0, '')
+
+chase-kriebel-804868 (0, '')
+
+dawson-wright-804869 (0, '')
+
+ricardo-brizuela-804870 (0, '')
+
+brooks-bryan-804871 (0, '')
+
+ricardo-gomez-804872 (0, '')
+
+juan-jimenez-804873 (0, '')
+
+donovan-canterberry-804874 (0, '')
+
+tommy-szczepanski-804875 (0, '')
+
+camilo-hernandez-804876 (0, '')
+
+parker-dillhoff-804877 (0, '')
+
+aaron-blum-804878 (0, '')
+
+elvis-rijo-804879 (0, '')
+
+austin-morris-804880 (0, '')
+
+beau-sylvester-804881 (0, '')
+
+mckay-whitaker-804882 (0, '')
+
+payton-ebbing-804883 (0, '')
+
+ryan-mccarthy-804884 (0, '')
+
+will-eldridge-804885 (0, '')
+

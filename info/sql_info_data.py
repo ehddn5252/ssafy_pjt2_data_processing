@@ -7,8 +7,44 @@ create_test_sql: str = '''
         )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
         '''
 
+create_schedules_sql: str = '''
+        CREATE TABLE `new_new_new_schedules` (
+          `game_id` int NOT NULL,
+          `game_datetime` varchar(45) NOT NULL,
+          `game_date` varchar(45) DEFAULT NULL,
+          `game_type` varchar(45) DEFAULT NULL,
+          `status` varchar(45) DEFAULT NULL,
+          `away_name` varchar(45) DEFAULT NULL,
+          `home_name` varchar(45) DEFAULT NULL,
+          `away_id` varchar(45) DEFAULT NULL,
+          `home_id` varchar(45) DEFAULT NULL,
+          `doubleheader` varchar(45) DEFAULT NULL,
+          `game_num` varchar(45) DEFAULT NULL,
+          `home_probable_pitcher` varchar(45) DEFAULT NULL,
+          `away_probable_pitcher` varchar(45) DEFAULT NULL,
+          `home_pitcher_note` varchar(2000) DEFAULT NULL,
+          `away_pitcher_note` varchar(2000) DEFAULT NULL,
+          `away_score` varchar(45) DEFAULT NULL,
+          `home_score` varchar(45) DEFAULT NULL,
+          `current_inning` varchar(45) DEFAULT NULL,
+          `inning_state` varchar(45) DEFAULT NULL,
+          `venue_id` varchar(45) DEFAULT NULL,
+          `venue_name` varchar(45) DEFAULT NULL,
+          `winning_team` varchar(45) DEFAULT NULL,
+          `losing_team` varchar(45) DEFAULT NULL,
+          `winning_pitcher` varchar(45) DEFAULT NULL,
+          `losing_pitcher` varchar(45) DEFAULT NULL,
+          `save_pitcher` varchar(45) DEFAULT NULL,
+          `summary` varchar(1000) DEFAULT NULL,
+          `uid` int NOT NULL,
+          `away_potcher_note` varchar(255) DEFAULT NULL,
+          `game_date_time` varchar(255) DEFAULT NULL,
+          PRIMARY KEY (`game_id`,`game_datetime`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+'''
+
 create_pitchers_sql: str = '''
-          CREATE TABLE `pitchers` (
+          CREATE TABLE `new_new_new_pitchers` (
           `uid` int NOT NULL AUTO_INCREMENT,
           `player_uid` int NOT NULL,
           `season` int NOT NULL,
@@ -93,7 +129,7 @@ create_pitchers_sql: str = '''
         '''
 
 create_events_sql: str = '''
-      CREATE TABLE `new_new_events` (
+      CREATE TABLE `new_new_new_events` (
       `uid` int NOT NULL AUTO_INCREMENT,
       `name` varchar(60) DEFAULT NULL,
       `team_id` int DEFAULT NULL,
@@ -126,7 +162,7 @@ create_events_sql: str = '''
     '''
 
 create_event_pitchers_sql: str = '''
-      CREATE TABLE `new_new_event_pitchers` (
+      CREATE TABLE `new_new_new_event_pitchers` (
       `uid` int NOT NULL AUTO_INCREMENT,
       `player_uid` int DEFAULT NULL,
       `name` varchar(100) DEFAULT NULL,

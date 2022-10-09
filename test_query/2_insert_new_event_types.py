@@ -42,10 +42,6 @@ if __name__ == "__main__":
     all_count=all_count[0][0]
     # 50892 60536
     for count, game_uid in tqdm(enumerate(reversed(game_uids))):
-        # if count<all_count-len(game_uids) - 50890:
-        #     continue
-        # if count<50890:
-        #     continue
         condition = f"game_uid={game_uid[0]}"
         raw_data: Tuple = dml_instance.get_select_from_where(column_names=["game_raw_data"],
                                                              table_name="game_raw_datas",

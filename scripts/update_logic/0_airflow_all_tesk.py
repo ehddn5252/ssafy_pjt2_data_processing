@@ -6,29 +6,75 @@ from tqdm import tqdm
 from Logger.logger import Logger
 from DB.DML import DML
 from DB.DDL import DDL
-from info.process_info import left_event_pitchers_to_pitchers_convert_dict, right_event_pitchers_to_pitchers_convert_dict
+from info.process_info import left_event_pitchers_to_pitchers_convert_dict, \
+    right_event_pitchers_to_pitchers_convert_dict
 import time
 from info.process_info import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
+import statsapi
 
 log_file_name = "4_insert_into_pitcher_log.txt"
+GAME_RAWDATAS_TABLE = "new_new_new_game_raw_datas"
+SCHEDULES_TABLE = "new_new_new_schedules"
+EVENTS_TABLE = "new_new_new_events"
+EVENT_PITCHERS_TABLE = "new_new_new_event_pitchers"
+EVENT_BATTERS_TABLE = "new_new_new_event_batters"
+PITCHERS_TABLE = "new_new_pitchers"
+BATTERS_TABLE = "new_new_new_batters"
 
 
-def update(dml_instance, where_condition: List, set_value: str):
-    where = ""
-    for i, event in enumerate(where_condition):
-        if i != 0:
-            where += f" or event='{event}'"
-        else:
-            where += f" where event='{event}'"
-    sql = f"update new_new_event_pitchers set {set_value} = 1"
-    sql += where
-    # sql = f"update event_pitchers set {set_value} = 0" # reset
-    dml_instance.execute_sql(sql)
+def stack_schedules(dml_instance, year):
+    val_list = []
+    for year in range(year, year - 1, -1):
+        print('year: ' + str(year))
+        games = statsapi.schedule(start_date='01/01/' + str(year), end_date='12/31/' + str(year))
+        for i in games:
+            game_id = i.get("game_id")
+            game_datetime = i.get("game_datetime")
+            game_date = i.get("game_date")
+            game_type = i.get("game_type")
+            status = i.get("status")
+            away_name = i.get("away_name")
+            home_name = i.get("home_name")
+            away_id = i.get("away_id")
+            home_id = i.get("home_id")
+            doubleheader = i.get("doubleheader")
+            game_num = i.get("game_num")
+            home_probable_pitcher = i.get("home_probable_pitcher")
+            away_probable_pitcher = i.get("away_probable_pitcher")
+            home_pitcher_note = i.get("home_pitcher_note")
+            away_pitcher_note = i.get("away_pitcher_note")
+            away_score = i.get("away_score")
+            home_score = i.get("home_score")
+            current_inning = i.get("current_inning")
+            inning_state = i.get("inning_state")
+            venue_id = i.get("venue_id")
+            venue_name = i.get("venue_name")
+            winning_team = i.get("winning_team")
+            losing_team = i.get("losing_team")
+            winning_pitcher = i.get("winning_pitcher")
+            losing_pitcher = i.get("losing_pitcher")
+            save_pitcher = i.get("save_pitcher")
+            summary = i.get("summary")
+            sql = "insert into new_new_new_schedules(game_id, game_datetime, game_date, game_type, status, away_name, home_name, away_id, home_id, doubleheader, game_num, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note, away_score, home_score, current_inning, inning_state, venue_id, venue_name, winning_team, losing_team, winning_pitcher, losing_pitcher, save_pitcher, summary) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+            vals = (
+                game_id, game_datetime, game_date, game_type, status, away_name, home_name, away_id, home_id,
+                doubleheader,
+                game_num, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note,
+                away_score,
+                home_score, current_inning, inning_state, venue_id, venue_name, winning_team, losing_team,
+                winning_pitcher,
+                losing_pitcher, save_pitcher, summary)
+            val_list.append(vals)
+        try:
+            dml_instance.execute_insert_many_sql(sql, val_list)
+        except pymysql.err.IntegrityError as e:
+            print(e)
 
 
 def insert_into_pitchers(dml_instance, _player_uid, _season):
     # 왼속 먼저하고 오른속 그 다음에 하기
-    sql = f"select event, is_hit, at_bat, pa, count,rbi, name, team_id, team_name  from new_new_event_pitchers where player_uid = {_player_uid} and season = '{_season}' and opponent_hand='L'"
+    sql = f"select event, is_hit, at_bat, pa, count,rbi, name, team_id, team_name  from {EVENT_PITCHERS_TABLE} where player_uid = {_player_uid} and season = '{_season}' and opponent_hand='L'"
 
     new_events: Tuple = dml_instance.execute_fetch_sql(sql, [])
     _name = ""
@@ -53,7 +99,6 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
                  "left_rbi": 0, "right_rbi": 0}
 
     for new_event in new_events:
-
         # case_dict["left_count_num"] += new_event[4]
         _event = new_event[0]
         case_dict["name"] = new_event[6]
@@ -64,7 +109,7 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
             case_dict[element] += new_event[4]
 
     # 오른손 상대
-    sql = f"select event, is_hit, at_bat, pa, count,rbi, name, team_id, team_name from new_new_event_pitchers where player_uid = {_player_uid} and season = '{_season}' and opponent_hand='R'"
+    sql = f"select event, is_hit, at_bat, pa, count,rbi, name, team_id, team_name from {EVENT_PITCHERS_TABLE} where player_uid = {_player_uid} and season = '{_season}' and opponent_hand='R'"
     new_events: Tuple = dml_instance.execute_fetch_sql(sql, [])
     try:
         for new_event in new_events:
@@ -73,7 +118,7 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
             case_dict["right_rbi"] += new_event[5]
             for element in right_event_pitchers_to_pitchers_convert_dict[_event]:
                 case_dict[element] += new_event[4]
-        sql = "insert into new_new_pitchers(season, player_uid, name,team_uid, team_name,left_hit_num,right_hit_num,left_twob_hit_num,right_twob_hit_num,left_threeb_hit_num,right_threeb_hit_num,left_hr_num, right_hr_num, left_pa_num, right_pa_num, left_er, right_er, left_not_my_er, right_not_my_er, left_game_num, right_game_num, left_bb_num, right_bb_num, left_ao_num, right_ao_num, left_dp_num, right_dp_num, left_ibb_num, right_ibb_num, left_count_num,right_count_num,win_num,lose_num,save_num,hold_num, left_out_num, right_out_num, pickoff_num, pickoff_catch_num, left_go_num,right_go_num, left_k_num, right_k_num, get_stolen_num,left_wild_pitch_num,right_wild_pitch_num,balk_num,left_ball_num,right_ball_num, left_strike_num, right_strike_num, left_rbi, right_rbi) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        sql = f"insert into {PITCHERS_TABLE}(season, player_uid, name,team_uid, team_name,left_hit_num,right_hit_num,left_twob_hit_num,right_twob_hit_num,left_threeb_hit_num,right_threeb_hit_num,left_hr_num, right_hr_num, left_pa_num, right_pa_num, left_er, right_er, left_not_my_er, right_not_my_er, left_game_num, right_game_num, left_bb_num, right_bb_num, left_ao_num, right_ao_num, left_dp_num, right_dp_num, left_ibb_num, right_ibb_num, left_count_num,right_count_num,win_num,lose_num,save_num,hold_num, left_out_num, right_out_num, pickoff_num, pickoff_catch_num, left_go_num,right_go_num, left_k_num, right_k_num, get_stolen_num,left_wild_pitch_num,right_wild_pitch_num,balk_num,left_ball_num,right_ball_num, left_strike_num, right_strike_num, left_rbi, right_rbi) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
         vars = (int(_season), _player_uid, case_dict["name"], case_dict["team_id"], case_dict["team_name"],
                 case_dict["left_hit_num"], case_dict["right_hit_num"], case_dict["left_twob_hit_num"],
                 case_dict["right_twob_hit_num"], case_dict["left_threeb_hit_num"],
@@ -103,17 +148,21 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
 
 
 def stack_raw_data(dml_instance):
-    sql = "select distinct(game_id) from schedules where game_id not in (select distinct(game_uid) from game_raw_datas) and game_id > 191492 and game_id <= 225000"
-    results = dml_instance.execute_fetch_sql(sql, [])
+    
+    # schdeuls 로 부터 데이터 쌓기
+    sql = f"select distinct(game_id) from {SCHEDULES_TABLE} where game_id not in (select distinct(game_uid) from {GAME_RAWDATAS_TABLE}) and game_date like '%2022%'"
+    print(sql)
+    dml_instance.execute(sql)
+    results = dml_instance.fetch_all()
     try:
-        for result in results:
+        for result in tqdm(results):
             game_uid = result[0]
             url = 'https://statsapi.mlb.com/api/v1.1/game/' + str(game_uid) + '/feed/live'
             response = requests.get(url)
             contents = response.text
             game_raw_data = json.dumps(json.loads(contents))
-            sql = "insert into game_raw_datas (game_uid, game_raw_data, creater) values(%s, %s, %s)"
-            vars = (game_uid, game_raw_data, "")
+            sql = f"insert into {GAME_RAWDATAS_TABLE}(game_uid, game_raw_data, creater) values(%s, %s, %s)"
+            vars = (game_uid, game_raw_data, "kdw")
             dml_instance.execute_insert_sql(sql, vars)
     except Exception as e:
         print(e)
@@ -121,16 +170,15 @@ def stack_raw_data(dml_instance):
 
 def stack_event_table_from_raw_data(dml_instance):
     raw_data: Tuple = None
-    condition = f" game_uid not in (select distinct(game_uid) from new_new_events)"
-    game_uids: Tuple = dml_instance.get_select_from_where(column_names=["game_uid"], table_name="game_raw_datas",
+    condition = f" game_uid not in (select distinct(game_uid) from {EVENTS_TABLE})"
+    game_uids: Tuple = dml_instance.get_select_from_where(column_names=["game_uid"], table_name=GAME_RAWDATAS_TABLE,
                                                           condition=condition, print_sql=True)
-    num_sql = "SELECT count(game_uid) from game_raw_datas"
-
+    num_sql = f"SELECT count(game_uid) from {GAME_RAWDATAS_TABLE}"
     for count, game_uid in tqdm(enumerate(game_uids)):
         try:
             condition = f"game_uid={game_uid[0]}"
             raw_data: Tuple = dml_instance.get_select_from_where(column_names=["game_raw_data"],
-                                                                 table_name="game_raw_datas",
+                                                                 table_name=f"{GAME_RAWDATAS_TABLE}",
                                                                  condition=condition)
             raw_data: dict = json.loads(raw_data[0][0])
         except:
@@ -211,8 +259,8 @@ def stack_event_table_from_raw_data(dml_instance):
                 # 개별
                 # batter_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{batter_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
                 # pitcher_sql2 = f"insert into events(player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) select %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s from dual where not exists ( select * from events where player_type ='{pitcher_player_type}' and game_uid='{game_uid}' and season='{season}' and event_index='{event_index}' and event_type='{event_type}')"
-            batter_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-            pitcher_sql = "insert into new_new_events(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            batter_sql = f"insert into {EVENTS_TABLE}(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            pitcher_sql = f"insert into {EVENTS_TABLE}(name, team_id, team_name, player_type, player_uid, date, game_uid, season, weather, opponent_uid, event_index, event, event_type, player_main_position, opponent_hand, rbi, strikes, balls, outs, inning, is_top_inning) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
             dml_instance.execute_insert_many_sql(batter_sql, batter_val_list)
             dml_instance.execute_insert_many_sql(pitcher_sql, pitcher_val_list)
         except Exception as e:
@@ -221,13 +269,26 @@ def stack_event_table_from_raw_data(dml_instance):
 
 
 def stack_event_players_from_events(dml_instance):
-    s = '''insert into new_new_event_pitchers(player_uid, season, opponent_hand, event, count, strikes, balls, outs, rbi, name, team_id, team_name)
+    s = f'''insert into {EVENT_PITCHERS_TABLE}(player_uid, season, opponent_hand, event, count, strikes, balls, outs, rbi, name, team_id, team_name)
             select player_uid,season, opponent_hand,event, count(uid), sum(strikes), sum(balls), sum(outs), sum(rbi), name, team_id, team_name
-            from new_new_events
+            from {EVENTS_TABLE}
             group by player_uid, player_type,season, opponent_hand,name,team_id,team_name, event
             having player_type="pitchers"
             '''
     dml_instance.execute_sql(s)
+
+
+def update_event_pitchers_execute(dml_instance, table_name, where_condition: List, set_value: str):
+    where = ""
+    for i, event in enumerate(where_condition):
+        if i != 0:
+            where += f" or event='{event}'"
+        else:
+            where += f" where event='{event}'"
+    sql = f"update {table_name} set {set_value} = 1"
+    sql += where
+    # sql = f"update event_pitchers set {set_value} = 0" # reset
+    dml_instance.execute_sql(sql)
 
 
 def update_event_pitchers(dml_instance):
@@ -241,93 +302,85 @@ def update_event_pitchers(dml_instance):
             at_bat_list.append(key)
         if value[2] == 1:
             pa_list.append(key)
-    table_name = "new_new_event_pitchers"
-    update(dml_instance, table_name, is_hit_list, "is_hit")
-    update(dml_instance, table_name, at_bat_list, "at_bat")
-    update(dml_instance, table_name, pa_list, "pa")
+    table_name = EVENT_PITCHERS_TABLE
+    update_event_pitchers_execute(dml_instance, table_name, is_hit_list, "is_hit")
+    update_event_pitchers_execute(dml_instance, table_name, at_bat_list, "at_bat")
+    update_event_pitchers_execute(dml_instance, table_name, pa_list, "pa")
 
 
 def stack_pitchers_from_event_pitchers(dml_instance: DML):
-    stack_pitchers_from_event_pitchers(dml_instance)
-    sql = f"select distinct(player_uid) from new_new_event_pitchers"
+    sql = f"select distinct(player_uid) from {EVENT_PITCHERS_TABLE}"
     print(time.time())
     player_uids: Tuple = dml_instance.execute_fetch_sql(sql, [])
     print(player_uids)
     for _, player_uid in enumerate(tqdm(player_uids)):
-        sql = f"select distinct(season) from new_new_event_pitchers where player_uid = {player_uid[0]}"
+        sql = f"select distinct(season) from {EVENT_PITCHERS_TABLE} where player_uid = {player_uid[0]}"
         seasons: Tuple = dml_instance.execute_fetch_sql(sql, [])
         for season in seasons:
             insert_into_pitchers(dml_instance, player_uid[0], season[0])
 
+def delete_pitchers_season_data(dml_instance, year):
+    delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
+    dml_instance.execute(delete_sql)
+    dml_instance.commit()
 
-
-def update_schedule(dml_instance: DML):
-    from datetime import date
-    date.today()
-    today = str(date.today())
-    today_year = today[0:4]
-    today_month = today[5:7]
-    today_day = today[8:10]
-
-    date = today_month + "/" + today_day + "/" + today_year
-    if int(today_month) != 1:
-        last_month = "0" + str((int(today_month) - 1))
-        start_date = last_month + "/01/" + today_year
-    else:
-        start_date = "01/01/" + today_year
-
-    for year in range(int(today_year), int(today_year)-1, -1):
-        print('year: ' + str(year))
-        games = statsapi.schedule(start_date=start_date, end_date=date)
-        for i in games:
-            game_id = i.get("game_id")
-            status = i.get("status")
-            home_probable_pitcher = i.get("home_probable_pitcher")
-            away_probable_pitcher = i.get("away_probable_pitcher")
-            home_pitcher_note = i.get("home_pitcher_note")
-            away_pitcher_note = i.get("away_pitcher_note")
-            away_score = i.get("away_score")
-            home_score = i.get("home_score")
-            current_inning = i.get("current_inning")
-            inning_state = i.get("inning_state")
-            winning_team = i.get("winning_team")
-            losing_team = i.get("losing_team")
-            winning_pitcher = i.get("winning_pitcher")
-            losing_pitcher = i.get("losing_pitcher")
-            save_pitcher = i.get("save_pitcher")
-            summary = i.get("summary")
-            sql = f"update schedules set status = %s, home_probable_pitcher = %s, away_probable_pitcher = %s, home_pitcher_note = %s, away_pitcher_note = %s, away_score = %s, home_score = %s, current_inning = %s,inning_state = %s, winning_team = %s, losing_team = %s, winning_pitcher = %s, losing_pitcher = %s, save_pitcher = %s, summary = %s "
-            # sql = f"update schedules set status = '{status}', home_probable_pitcher = '{home_probable_pitcher}', away_probable_pitcher = '{away_probable_pitcher}', home_pitcher_note = '{home_pitcher_note}', away_pitcher_note = '{away_pitcher_note}', away_score = '{away_score}', home_score = '{home_score}', current_inning = '{current_inning}',inning_state = '{inning_state}', winning_team = '{winning_team}', losing_team = '{losing_team}', winning_pitcher = '{winning_pitcher}', losing_pitcher = '{losing_pitcher}', save_pitcher = '{save_pitcher}', summary = '{summary}' "
-            sql += f"where game_id = {game_id}"
-            vals = (
-                status, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note, away_score,
-                home_score, current_inning, inning_state, winning_team, losing_team, winning_pitcher, losing_pitcher,
-                save_pitcher, summary)
-            try:
-                # dml_instance.execute_sql(sql)
-                dml_instance.execute_update_sql(sql, vals)
-            except pymysql.err.IntegrityError as e:
-                print(e)
+def update_pitcher_position(dml_instance):
+    '''
+    https://github.com/toddrob99/MLB-StatsAPI/wiki
+    standing data
+    '''
+    sql=f"update {PITCHERS_TABLE} set position = 'P' where primary_position_abbreviation is null"
+    dml_instance.execute(sql)
+    dml_instance.commit()
 
 
 if __name__ == "__main__":
     dml_instance = DML()
     ddl_instance = DDL()
-    
-    # 1 분에 한 번씩 스케줄에 현재정보 받아와야함
-    update_schedule(dml_instance)
 
-    # 맨 처음 한번 스케줄링
-    DDL.create_table(table_name='events')
-    DDL.create_table(table_name='event_pitchers')
-    DDL.create_table(table_name='pitchers')
-    # 1. schedule 로부터 game raw_data 데이터 쌓기
+    # 맨 처음 테이블 생성
+
+    # 새로 쌓는 db TRUNCATE TABLE
+    # ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
+    # ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
+    # ddl_instance.truncate_table(table_name=EVENT_BATTERS_TABLE)
+    YEAR = 2022
+    
+    # 0. 시즌 정보 테이블 삭제
+    
+    # 1. schedule 맨 처음 비워줌
+    ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
+
+    # 2. 새 schedules 쌓아주는 로직
+    stack_schedules(dml_instance, YEAR)
+    print("================1. stack_schedules clear")
+
+    # 3. schedule 로부터 game_raw_data 데이터 쌓기
+    # truncate 할 필요 없음
     stack_raw_data(dml_instance)
-    # 2. raw_data 에서 event table 만들어내는 로직
+    print("================2. stack_raw_data clear")
+
+    # 한 번 비워줘야 함
+    ddl_instance.truncate_table(table_name=EVENTS_TABLE)
+
+    # 4. raw_data 에서 events 데이터 쌓기
     stack_event_table_from_raw_data(dml_instance)
-    # 3. event_players table 만드는 sql
+    print("================3. stack_event_table_from_raw_data clear")
+
+    # 5. event_pitchers table 만드는 sql
+    ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
     stack_event_players_from_events(dml_instance)
-    # 4. event_pitchers 를 update 하기 위한 로직
+    print("================4. stack_event_players_from_events clear")
+
+    # 6. event_pitchers 를 update 하기 위한 로직
     update_event_pitchers(dml_instance)
-    # 5. pitchers 테이블 만드는 로직
+    print("================5. update_event_pitchers clear")
+
+    # 7. 이번년도 시즌의 투수 정보 삭제
+    delete_pitchers_season_data(dml_instance, YEAR)
+    
+    # 8. pitchers 테이블 만드는 로직
     stack_pitchers_from_event_pitchers(dml_instance)
+    update_pitcher_position(dml_instance)
+    print("================6. stack_pitchers_from_event_pitchers")
+    dml_instance.close()

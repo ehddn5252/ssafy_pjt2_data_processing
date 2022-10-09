@@ -4,16 +4,14 @@ from DB.DML import DML
 from typing import Tuple
 
 if __name__ == "__main__":
-    dml_instance = DML()
-    raw_data: Tuple = None
-
+    conn = pymysql.connect(host='j7e202.p.ssafy.io', user='ssafy', password='!321yfass', db='mlbti', charset='utf8')
+    cur = conn.cursor()
     val_list = []
     for year in range(2022, 2021, -1):
         print('year: ' + str(year))
         games = statsapi.schedule(start_date='01/01/' + str(year), end_date='12/31/' + str(year))
         print(len(games))
         for i in games:
-            print(i)
             game_id = i.get("game_id")
             game_datetime = i.get("game_datetime")
             game_date = i.get("game_date")
@@ -42,13 +40,7 @@ if __name__ == "__main__":
             save_pitcher = i.get("save_pitcher")
             summary = i.get("summary")
 
-            # sql = "insert into new_new_new_schedules values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
             sql = "insert into new_new_new_schedules(game_id, game_datetime, game_date, game_type, status, away_name, home_name, away_id, home_id, doubleheader, game_num, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note, away_score, home_score, current_inning, inning_state, venue_id, venue_name, winning_team, losing_team, winning_pitcher, losing_pitcher, save_pitcher, summary) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-
             vals = (game_id, game_datetime, game_date, game_type, status, away_name, home_name, away_id, home_id, doubleheader,game_num, home_probable_pitcher, away_probable_pitcher, home_pitcher_note, away_pitcher_note, away_score, home_score, current_inning, inning_state, venue_id,venue_name, winning_team, losing_team, winning_pitcher, losing_pitcher, save_pitcher, summary)
-            val_list.append(vals)
-            # dml_instance.execute_insert_sql(sql,vals)
-        try:
-            dml_instance.execute_insert_many_sql(sql, val_list)
-        except pymysql.err.IntegrityError as e:
-            print(e)
+            cur.execute(sql,vals)
+            conn.commit()

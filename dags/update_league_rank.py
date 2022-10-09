@@ -101,7 +101,7 @@ def update_rank():
                  _team_id, _w, _wc_elim_num, _wc_gb, _wc_rank])
     sql = "insert into league_rank(league_code,date,div_name,div_rank,elim_num,gb,l,league_rank,name,sport_rank,team_id,w,wc_elim_num,wc_gb,wc_rank) values(%s ,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     dml_instance.execute_insert_many_sql(sql, vars)
-
+    dml_instance.close()
 
 def print_result(**kwargs):
     r = kwargs["task_instance"].xcom_pull(key='calc_result')
