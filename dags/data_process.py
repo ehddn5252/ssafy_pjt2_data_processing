@@ -46,7 +46,7 @@ default_args = {
 }
 
 dag_args = dict(
-    dag_id="mlb-data-insert",
+    dag_id="update_mlb_player_data",
     default_args=default_args,
     description='insert schedule mlbti',
     schedule_interval=timedelta(days=2),
@@ -427,11 +427,9 @@ def update_event_pitchers():
 
 def stack_pitchers_from_event_pitchers():
     sql = f"select distinct(player_uid) from {EVENT_PITCHERS_TABLE}"
-    print(time.time())
     dml_instance = DML()
     player_uids: Tuple = dml_instance.execute_fetch_sql(sql, [])
-    print(player_uids)
-    for _, player_uid in enumerate(tqdm(player_uids)):
+    for _, player_uid in enumerate(player_uids):
         sql = f"select distinct(season) from {EVENT_PITCHERS_TABLE} where player_uid = {player_uid[0]}"
         seasons: Tuple = dml_instance.execute_fetch_sql(sql, [])
         for season in seasons:
@@ -488,12 +486,12 @@ with DAG(**dag_args) as dag:
 
     # 3 raw_data 에서 events 데이터 쌓기
     _stack_event_table_from_raw_data = PythonOperator(
-        task_id='stack_event_table_from_raw_data',
+        task_id='stack_event_table',
         python_callable=stack_event_table_from_raw_data,
     )
     # 4. event_pitchers table 만드는 sql
     _stack_event_players_from_events = PythonOperator(
-        task_id='stack_event_players_from_events',
+        task_id='stack_event_players',
         python_callable=stack_event_players_from_events,
     )
 
@@ -511,7 +509,7 @@ with DAG(**dag_args) as dag:
 
     # 7. pitchers 테이블 만드는 로직
     _stack_pitchers_from_event_pitchers = PythonOperator(
-        task_id='stack_pitchers_from_event_pitchers',
+        task_id='stack_pitchers',
         python_callable=stack_pitchers_from_event_pitchers,
     )
 
@@ -536,7 +534,7 @@ with DAG(**dag_args) as dag:
         bash_command='echo "complete~!"',
         trigger_rule=TriggerRule.NONE_FAILED
     )
-    #_stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data
+    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
+    #_stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data
 
     # start >> now_date >> stack_schedules >> complete
