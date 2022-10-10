@@ -257,6 +257,12 @@ def remove_season_batters():
     dml_instance.execute(delete_sql)
     dml_instance.commit()
 
+def remove_season_pitchers():
+    dml_instance = DML()
+    delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
+    dml_instance.execute(delete_sql)
+    dml_instance.commit()
+
 def event_batter_counts():
     """
     insert into new_new_new_event_batter_counts( player_uid, season, team, opponent_hand, rbi, strike, ball, count)
@@ -666,12 +672,6 @@ def stack_pitchers_from_event_pitchers():
     dml_instance.close()
 
 
-def delete_pitchers_season_data():
-    dml_instance = DML()
-    delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
-    dml_instance.execute(delete_sql)
-    dml_instance.commit()
-
 
 def update_pitcher_position():
     '''
@@ -728,9 +728,9 @@ with DAG(**dag_args) as dag:
     )
 
     # 6. 이번년도 시즌의 투수 정보 삭제
-    _delete_pitchers_season = PythonOperator(
-        task_id='delete_pitchers_season_data',
-        python_callable=delete_pitchers_season_data,
+    _remove_season_pitchers = PythonOperator(
+        task_id='remove_season_pitchers',
+        python_callable=remove_season_pitchers(),
     )
 
     # 7. pitchers 테이블 만드는 로직
@@ -748,11 +748,11 @@ with DAG(**dag_args) as dag:
         python_callable=stack_event_batters,
     )
     _stack_batters = PythonOperator(
-        task_id='stack_event_batters',
+        task_id='stack_batters',
         python_callable=stack_batters,
     )
     _remove_now_season= PythonOperator(
-        task_id='stack_event_batters',
+        task_id='remove_season_batters',
         python_callable=remove_season_batters,
     )
 
@@ -773,5 +773,5 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _delete_pitchers_season >> _stack_pitchers >> _remove_now_season >> _stack_batters >> complete
+    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _remove_season_pitchers >> _stack_pitchers >> _remove_now_season >> _stack_batters >> complete
     # start >> now_date >> stack_schedules >> complete
