@@ -16,11 +16,9 @@ import json
 from typing import List, Tuple
 from tqdm import tqdm
 from Logger.logger import Logger
-from DB.DML import DML
 from DB.DDL import DDL
 from info.process_info import left_event_pitchers_to_pitchers_convert_dict, \
     right_event_pitchers_to_pitchers_convert_dict
-import time
 from info.process_info import new_event_to_pitchers_dict, pitcher_primary_position_abbreviation
 import statsapi
 
@@ -53,6 +51,234 @@ dag_args = dict(
     start_date=datetime(2022, 10, 8),
     tags=['example-sj'],
 )
+
+
+def stack_batters():
+    dml_instance = DML()
+
+    sql = f"SELECT DISTINCT player_uid from {EVENT_BATTERS_TABLE}"
+    dml_instance.execute(sql)
+    res = dml_instance.fetch_all()
+    i = 0
+    for r in res:
+        print(i)
+        i += 1
+        player_uid = r[0]
+        sql = f"select distinct team from {EVENT_BATTERS_TABLE} where player_uid = %s"
+        dml_instance.execute(sql, player_uid)
+        resTeam = dml_instance.fetch_all()
+        for t in resTeam:
+            team = t[0]
+            sql = f"select distinct season from {EVENT_BATTERS_TABLE} where player_uid = %s and team = %s"
+            dml_instance.execute(sql, (player_uid, team))
+            res2 = dml_instance.fetch_all()
+            val_list = []
+            for s in res2:
+                season = s[0]
+                sql = f"select full_name, primary_position_abbreviation from {BASEBALL_PLAYERS_TABLE} where uid = %s"
+                dml_instance.execute(sql, (player_uid))
+                res3 = dml_instance.fetch_all()
+                name = res3[0][0]
+                position = res3[0][1]
+
+                sql = "SELECT opponent_hand, event, sum(count) as count " \
+                      f" FROM {EVENT_BATTERS_TABLE} " \
+                      "where player_uid = %s " \
+                      "and season = %s " \
+                      "and team = %s " \
+                      "and is_hit = true " \
+                      "group by opponent_hand, event"
+                dml_instance.execute(sql, (player_uid, season, team))
+                res4 = dml_instance.fetch_all()
+                left_twob_hit_num = 0
+                left_threeb_hit_num = 0
+                left_hr_num = 0
+                left_hit_num = 0
+                right_twob_hit_num = 0
+                right_threeb_hit_num = 0
+                right_hr_num = 0
+                right_hit_num = 0
+                for temp in res4:
+                    if temp[0] == 'L':
+                        if temp[1] == 'Single':
+                            left_hit_num += temp[2]
+                        elif temp[1] == 'Double':
+                            left_hit_num += temp[2]
+                            left_twob_hit_num = temp[2]
+                        elif temp[1] == 'Triple':
+                            left_hit_num += temp[2]
+                            left_threeb_hit_num = temp[2]
+                        elif temp[1] == 'Home Run':
+                            left_hit_num += temp[2]
+                            left_hr_num = temp[2]
+                    else:
+                        if temp[1] == 'Single':
+                            right_hit_num += temp[2]
+                        elif temp[1] == 'Double':
+                            right_hit_num += temp[2]
+                            right_twob_hit_num = temp[2]
+                        elif temp[1] == 'Triple':
+                            right_hit_num += temp[2]
+                            right_threeb_hit_num = temp[2]
+                        elif temp[1] == 'Home Run':
+                            right_hit_num += temp[2]
+                            right_hr_num = temp[2]
+                sql = "SELECT opponent_hand, event, sum(count) as count " \
+                      f" FROM {EVENT_BATTERS_TABLE} " \
+                      "where player_uid = %s " \
+                      "and season = %s " \
+                      "and team = %s " \
+                      "and is_hit = false " \
+                      "group by opponent_hand, event"
+                dml_instance.execute(sql, (player_uid, season, team))
+                res5 = dml_instance.fetch_all()
+                left_bb_num = 0
+                right_bb_num = 0
+                left_ao_num = 0
+                right_ao_num = 0
+                left_go_num = 0
+                right_go_num = 0
+                left_so_num = 0
+                right_so_num = 0
+                left_sh_num = 0
+                right_sh_num = 0
+                left_sf_num = 0
+                right_sf_num = 0
+                left_ibb_num = 0
+                right_ibb_num = 0
+                for temp in res5:
+                    if temp[0] == 'L':
+                        if temp[1] == 'Walk':
+                            left_bb_num += temp[2]
+                        elif temp[1] == 'Flyout':
+                            left_ao_num = temp[2]
+                        elif temp[1] == 'Groundout':
+                            left_go_num = temp[2]
+                        elif temp[1] == 'Strikeout':
+                            left_so_num = temp[2]
+                        elif temp[1] == 'Sac Bunt':
+                            left_sh_num = temp[2]
+                        elif temp[1] == 'Sac Fly':
+                            left_sf_num = temp[2]
+                        elif temp[1] == 'Intent Walk Run':
+                            left_ibb_num = temp[2]
+                    else:
+                        if temp[1] == 'Walk':
+                            right_bb_num += temp[2]
+                        elif temp[1] == 'Flyout':
+                            right_ao_num = temp[2]
+                        elif temp[1] == 'Groundout':
+                            right_go_num = temp[2]
+                        elif temp[1] == 'Strikeout':
+                            right_so_num = temp[2]
+                        elif temp[1] == 'Sac Bunt':
+                            right_sh_num = temp[2]
+                        elif temp[1] == 'Sac Fly':
+                            right_sf_num = temp[2]
+                        elif temp[1] == 'Intent Walk Run':
+                            right_ibb_num = temp[2]
+                try:
+                    sql = "SELECT *" \
+                          f"FROM {EVENT_BATTER_COUNTS_TABLE} " \
+                          "where player_uid = %s " \
+                          "and season = %s " \
+                          "and opponent_hand = %s"
+                    dml_instance.execute(sql, (player_uid, season, "L"))
+                    res6 = dml_instance.fetch_all()
+                    left_rbi = res6[0][4]
+                    left_strike_num = res6[0][5]
+                    left_ball_num = res6[0][6]
+                    left_game_num = res6[0][7]
+                except:
+                    pass
+                try:
+                    sql = "SELECT *" \
+                          f"FROM {EVENT_BATTER_COUNTS_TABLE} " \
+                          "where player_uid = %s " \
+                          "and season = %s " \
+                          "and opponent_hand = %s"
+                    dml_instance.execute(sql, (player_uid, season, "R"))
+                    res7 = dml_instance.fetch_all()
+                    right_rbi = res7[0][4]
+                    right_strike_num = res7[0][5]
+                    right_ball_num = res7[0][6]
+                    right_game_num = res7[0][7]
+                except:
+                    pass
+                sql = "select count(*) " \
+                      f"from {EVENT_BATTERS_TABLE} " \
+                      "where at_bat= %s and player_uid = %s and season = %s and team = %s and opponent_hand = %s"
+                dml_instance.execute(sql, (True, player_uid, season, team, "L"))
+                left_at_bat_num = dml_instance.fetch_all()[0][0]
+                sql = "select count(*) " \
+                      f"from {EVENT_BATTERS_TABLE} " \
+                      "where at_bat= %s and player_uid = %s and season = %s and team = %s and opponent_hand = %s"
+                dml_instance.execute(sql, (True, player_uid, season, team, "R"))
+                right_at_bat_num = dml_instance.fetch_all()[0][0]
+                sql = "select count(*) " \
+                      f"from {EVENT_BATTERS_TABLE} " \
+                      "where pa= %s and player_uid = %s and season = %s and team = %s and opponent_hand = %s"
+                dml_instance.execute(sql, (True, player_uid, season, team, "L"))
+                left_pa_num = dml_instance.fetch_all()[0][0]
+                sql = "select count(*) " \
+                      f"from {EVENT_BATTERS_TABLE} " \
+                      "where pa= %s and player_uid = %s and season = %s and team = %s and opponent_hand = %s"
+                dml_instance.execute(sql, (True, player_uid, season, team, "R"))
+                right_pa_num = dml_instance.fetch_all()[0][0]
+                sql = f"insert into {BATTERS_TABLE} (player_uid, season, name, position, team_name, left_hit_num, " \
+                      "right_hit_num, left_twob_hit_num, right_twob_hit_num, left_threeb_hit_num, right_threeb_hit_num, " \
+                      "left_hr_num, right_hr_num, left_pa_num, right_pa_num, left_at_bat_num, " \
+                      "right_at_bat_num, left_rbi, right_rbi, right_game_num, left_game_num, " \
+                      "left_ops, right_ops, left_bb_num, right_bb_num, left_ao_num, " \
+                      "right_ao_num, left_go_num, right_go_num, left_so_num, right_so_num, " \
+                      "left_dp_num, right_dp_num, left_sh_num, right_sh_num, left_sf_num, " \
+                      "right_sf_num, left_ibb_num, right_ibb_num, left_strike_num, right_strike_num, " \
+                      "left_ball_num, right_ball_num) values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s," \
+                      "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s," \
+                      "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s," \
+                      "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s," \
+                      "%s, %s, %s)"
+                val_list.append((player_uid, season, name, position, team, left_hit_num, right_hit_num,
+                                 left_twob_hit_num, right_twob_hit_num, left_threeb_hit_num,
+                                 right_threeb_hit_num, left_hr_num, right_hr_num, left_pa_num, right_pa_num,
+                                 left_at_bat_num, right_at_bat_num, left_rbi, right_rbi, right_game_num,
+                                 left_game_num, 0, 0, left_bb_num, right_bb_num, left_ao_num, right_ao_num, left_go_num,
+                                 right_go_num, left_so_num,
+                                 right_so_num, 0, 0, left_sh_num, right_sh_num, left_sf_num, right_sf_num, left_ibb_num,
+                                 right_ibb_num, left_strike_num,
+                                 right_strike_num, left_ball_num, right_ball_num))
+            dml_instance.execute_insert_many_sql(sql, val_list)
+            dml_instance.commit()
+    dml_instance.close()
+
+def remove_season_batters():
+    dml_instance = DML()
+    delete_sql = f"delete from {BATTERS_TABLE} where season ={YEAR}"
+    dml_instance.execute(delete_sql)
+    dml_instance.commit()
+
+def event_batter_counts():
+    """
+    insert into new_new_new_event_batter_counts( player_uid, season, team, opponent_hand, rbi, strike, ball, count)
+    select player_uid, season, team_name, opponent_hand, sum(rbi), sum(strikes), sum(balls), count(*)
+    from new_new_new_events
+    where player_type="batters"
+    group by season, player_uid, opponent_hand,team_name;
+    """
+
+
+def stack_event_batters():
+    dml_instance = DML()
+
+    s = f'''
+            insert into {EVENT_BATTERS_TABLE}(player_uid, season, team, opponent_hand,event,count)
+            select player_uid, season, team_name,opponent_hand, event, count(uid)
+            from {EVENTS_TABLE}
+            where player_type = "batters"
+            group by player_uid, season, opponent_hand, event,team_name;
+        '''
+    print(s)
+    dml_instance.execute_sql(s)
 
 
 def print_date():
@@ -443,7 +669,7 @@ def delete_pitchers_season_data():
     delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
     dml_instance.execute(delete_sql)
     dml_instance.commit()
-    
+
 
 def update_pitcher_position():
     '''
@@ -488,7 +714,7 @@ with DAG(**dag_args) as dag:
         python_callable=stack_event_table_from_raw_data,
     )
     # 4. event_pitchers table 만드는 sql
-    _stack_event_players_from_events = PythonOperator(
+    _stack_event_players = PythonOperator(
         task_id='stack_event_players',
         python_callable=stack_event_players_from_events,
     )
@@ -500,13 +726,13 @@ with DAG(**dag_args) as dag:
     )
 
     # 6. 이번년도 시즌의 투수 정보 삭제
-    _delete_pitchers_season_data = PythonOperator(
+    _delete_pitchers_season = PythonOperator(
         task_id='delete_pitchers_season_data',
         python_callable=delete_pitchers_season_data,
     )
 
     # 7. pitchers 테이블 만드는 로직
-    _stack_pitchers_from_event_pitchers = PythonOperator(
+    _stack_pitchers = PythonOperator(
         task_id='stack_pitchers',
         python_callable=stack_pitchers_from_event_pitchers,
     )
@@ -514,6 +740,18 @@ with DAG(**dag_args) as dag:
     _update_pitcher_position = PythonOperator(
         task_id='update_pitcher_position',
         python_callable=update_pitcher_position,
+    )
+    _stack_event_batters = PythonOperator(
+        task_id='stack_event_batters',
+        python_callable=stack_event_batters,
+    )
+    _stack_batters = PythonOperator(
+        task_id='stack_event_batters',
+        python_callable=stack_batters,
+    )
+    _remove_now_season= PythonOperator(
+        task_id='stack_event_batters',
+        python_callable=remove_season_batters,
     )
 
     # now_date = PythonOperator(
@@ -533,7 +771,5 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >>_delete_pitchers_season_data >>_stack_pitchers_from_event_pitchers >>  complete
-
-
+    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _delete_pitchers_season >> _stack_pitchers >> _remove_now_season >> _stack_batters >> complete
     # start >> now_date >> stack_schedules >> complete

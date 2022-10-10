@@ -34,3 +34,9 @@ select player_uid,season, opponent_hand,event, count(uid), sum(strikes), sum(bal
 from new_new_events
 group by player_uid, player_type,season, opponent_hand,name,team_id,team_name, event
 having player_type="pitchers"
+
+insert into new_event_batters (player_uid, season, opponent_hand,event,count)
+select player_uid, season, opponent_hand, event, count(uid)
+from new_events
+where player_type = "batters"
+group by player_uid, season, opponent_hand, event;
