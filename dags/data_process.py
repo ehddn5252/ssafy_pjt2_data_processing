@@ -32,6 +32,7 @@ EVENT_PITCHERS_TABLE = "new_new_new_event_pitchers"
 EVENT_BATTERS_TABLE = "new_new_new_event_batters"
 PITCHERS_TABLE = "new_new_pitchers"
 BATTERS_TABLE = "new_new_new_batters"
+EVENT_BATTER_COUNTS_TABLE = "new_new_new_event_batter_counts"
 YEAR = 2022
 default_args = {
     'owner': 'owner-name',
@@ -52,7 +53,17 @@ dag_args = dict(
     tags=['example-sj'],
 )
 
-
+def insert_into_event_batters_count():
+    dml_instance = DML()
+    sql = f'''
+        insert into {EVENT_BATTER_COUNTS_TABLE}( player_uid, season, team, opponent_hand, rbi, strike, ball, count)
+        select player_uid, season, team_name, opponent_hand, sum(rbi), sum(strikes), sum(balls), count(*)
+        from {EVENTS_TABLE}
+        where player_type="batters"
+        group by season, player_uid, opponent_hand,team_name;
+        '''
+    dml_instance.execute(sql)
+    dml_instance.commit()
 def stack_batters():
     dml_instance = DML()
 
@@ -190,7 +201,7 @@ def stack_batters():
                     left_ball_num = res6[0][6]
                     left_game_num = res6[0][7]
                 except:
-                    pass
+                    print("event_batters_count execption")
                 try:
                     sql = "SELECT *" \
                           f"FROM {EVENT_BATTER_COUNTS_TABLE} " \
@@ -689,6 +700,7 @@ def truncate_tables():
     ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
     ddl_instance.truncate_table(table_name=EVENTS_TABLE)
     ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
+    ddl_instance.truncate_table(table_name=EVENT_BATTER_COUNTS_TABLE)
 
 
 with DAG(**dag_args) as dag:
@@ -751,9 +763,14 @@ with DAG(**dag_args) as dag:
         task_id='stack_batters',
         python_callable=stack_batters,
     )
-    _remove_now_season= PythonOperator(
+    _remove_now_season_batters= PythonOperator(
         task_id='remove_season_batters',
         python_callable=remove_season_batters,
+    )
+
+    _insert_into_event_batters_count = PythonOperator(
+        task_id='insert_into_event_batters_count',
+        python_callable=insert_into_event_batters_count,
     )
 
     # now_date = PythonOperator(
@@ -773,5 +790,5 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _remove_season_pitchers >> _stack_pitchers >> _remove_now_season >> _stack_batters >> complete
+    _truncate_all_table >> _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _remove_season_pitchers >> _stack_pitchers >> _insert_into_event_batters_count >> _remove_now_season_batters >> _stack_batters >> complete
     # start >> now_date >> stack_schedules >> complete

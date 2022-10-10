@@ -25,8 +25,8 @@ EVENT_BATTER_COUNTS_TABLE = "new_new_new_event_batter_counts"
 BASEBALL_PLAYERS_TABLE = "baseball_players"
 YEAR = 2022
 
-def stack_batters():
-    dml_instance = DML()
+
+def stack_batters(dml_instance):
 
     sql = f"SELECT DISTINCT player_uid from {EVENT_BATTERS_TABLE}"
     dml_instance.execute(sql)
@@ -224,7 +224,8 @@ def stack_batters():
 
     dml_instance.close()
 
-def remove_season_batters(dml_instance,year):
+
+def remove_season_batters(dml_instance, year):
     delete_sql = f"delete from {BATTERS_TABLE} where season ={year}"
     dml_instance.execute(delete_sql)
     dml_instance.commit()
@@ -356,7 +357,6 @@ def insert_into_pitchers(dml_instance, _player_uid, _season):
 
 
 def stack_raw_data(dml_instance):
-    
     # schdeuls 로 부터 데이터 쌓기
     sql = f"select distinct(game_id) from {SCHEDULES_TABLE} where game_id not in (select distinct(game_uid) from {GAME_RAWDATAS_TABLE}) and game_date like '%2022%'"
     print(sql)
@@ -527,6 +527,7 @@ def stack_pitchers_from_event_pitchers(dml_instance: DML):
         for season in seasons:
             insert_into_pitchers(dml_instance, player_uid[0], season[0])
 
+
 def remove_season_pitchers(dml_instance, year):
     delete_sql = f"delete from {PITCHERS_TABLE} where season ={YEAR}"
     dml_instance.execute(delete_sql)
@@ -538,10 +539,21 @@ def update_pitcher_position(dml_instance):
     https://github.com/toddrob99/MLB-StatsAPI/wiki
     standing data
     '''
-    sql=f"update {PITCHERS_TABLE} set position = 'P' where primary_position_abbreviation is null"
+    sql = f"update {PITCHERS_TABLE} set position = 'P' where primary_position_abbreviation is null"
     dml_instance.execute(sql)
     dml_instance.commit()
 
+
+def insert_into_event_batters_count(dml_instance):
+    sql = f'''
+        insert into {EVENT_BATTER_COUNTS_TABLE}( player_uid, season, team, opponent_hand, rbi, strike, ball, count)
+        select player_uid, season, team_name, opponent_hand, sum(rbi), sum(strikes), sum(balls), count(*)
+        from {EVENTS_TABLE}
+        where player_type="batters"
+        group by season, player_uid, opponent_hand,team_name;
+        '''
+    dml_instance.execute(sql)
+    dml_instance.commit()
 
 if __name__ == "__main__":
     dml_instance = DML()
@@ -554,9 +566,9 @@ if __name__ == "__main__":
     # ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
     # ddl_instance.truncate_table(table_name=EVENT_BATTERS_TABLE)
     YEAR = 2022
-    
+
     # 0. 시즌 정보 테이블 삭제
-    
+
     # 1. schedule 맨 처음 비워줌
     ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
 
@@ -587,10 +599,19 @@ if __name__ == "__main__":
 
     # 7. 이번년도 시즌의 투수 정보 삭제
     remove_season_pitchers(dml_instance, YEAR)
-    remove_season_batters(dml_instance, YEAR)
 
     # 8. pitchers 테이블 만드는 로직
     stack_pitchers_from_event_pitchers(dml_instance)
     update_pitcher_position(dml_instance)
+
+    # event_batters_count 도 비워주고 다시 생성
+    ddl_instance.truncate_table(table_name=EVENT_BATTER_COUNTS_TABLE)
+    insert_into_event_batters_count(dml_instance)
+
+    # 9. 이번년도 시즌의 타자 정보 삭제
+    remove_season_batters(dml_instance, YEAR)
+
+    # 10. batters 테이블 만드는 로직
+    stack_batters(dml_instance)
     print("================6. stack_pitchers_from_event_pitchers")
     dml_instance.close()
