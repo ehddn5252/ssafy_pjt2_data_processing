@@ -525,7 +525,8 @@ def stack_raw_data():
         dml_instance.close()
 
 
-def stack_event_table_from_raw_data(dml_instance):
+def stack_event_table_from_raw_data():
+    dml_instance = DML()
     raw_data: Tuple = None
     condition = f" game_uid not in (select distinct(game_uid) from {EVENTS_TABLE})"
     game_uids: Tuple = dml_instance.get_select_from_where(column_names=["game_uid"], table_name=GAME_RAWDATAS_TABLE,
@@ -625,7 +626,8 @@ def stack_event_table_from_raw_data(dml_instance):
             print("game_uid: " + str(game_uid))
 
 
-def stack_event_players_from_events(dml_instance):
+def stack_event_players_from_events():
+    dml_instance = DML()
     s = f'''insert into {EVENT_PITCHERS_TABLE}(player_uid, season, opponent_hand, event, count, strikes, balls, outs, rbi, name, team_id, team_name)
             select player_uid,season, opponent_hand,event, count(uid), sum(strikes), sum(balls), sum(outs), sum(rbi), name, team_id, team_name
             from {EVENTS_TABLE}
