@@ -3090,3 +3090,117 @@ bristol-carter-806043 (0, '')
 
 luis-castillo-806044 (0, '')
 
+jaewoo-cho-806045 (0, '')
+
+alexander-clemmey-806046 (0, '')
+
+luke-coll-806047 (0, '')
+
+jonah-conradt-806048 (0, '')
+
+edward-copper-806049 (0, '')
+
+pete-craska-806050 (0, '')
+
+connor-crisp-806051 (0, '')
+
+jordan-crosland-806052 (0, '')
+
+dean-curley-806053 (0, '')
+
+matthew-dallas-806054 (0, '')
+
+sebastian-david-806055 (0, '')
+
+james-decremer-806056 (0, '')
+
+brett-denby-806057 (0, '')
+
+zaid-diaz-806058 (0, '')
+
+hunter-dietz-806059 (0, '')
+
+luke-dotson-806060 (0, '')
+
+isaiah-drake-806061 (0, '')
+
+andrew-duncan-806062 (0, '')
+
+cole-eaton-806063 (0, '')
+
+steven-echavarria-806064 (0, '')
+
+mason-eckelman-806065 (0, '')
+
+gavin-eddy-806066 (0, '')
+
+james-ellwanger-806067 (0, '')
+
+colt-emerson-806068 (0, '')
+
+cason-engert-806069 (0, '')
+
+mack-estrada-806070 (0, '')
+
+jonny-farmelo-806071 (0, '')
+
+seth-farni-806072 (0, '')
+
+eric-fernandez-806073 (0, '')
+
+cal-fisher-806074 (0, '')
+
+boston-flannery-806075 (0, '')
+
+gabe-gaeckle-806076 (0, '')
+
+kendall-george-806077 (0, '')
+
+ryan-geraghty-806078 (0, '')
+
+mark-gialluisi-806079 (0, '')
+
+john-glasscock-806080 (0, '')
+
+gage-goddard-806081 (0, '')
+
+jaxon-goldberg-806082 (0, '')
+
+jandaniel-gonzalez-806083 Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/section/header/div/img"}
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x008B1353+2233171]
+	Ordinal0 [0x00848E31+1805873]
+	Ordinal0 [0x007566FD+812797]
+	Ordinal0 [0x007855DF+1005023]
+	Ordinal0 [0x007857CB+1005515]
+	Ordinal0 [0x007B7632+1209906]
+	Ordinal0 [0x007A1AD4+1120980]
+	Ordinal0 [0x007B59E2+1202658]
+	Ordinal0 [0x007A18A6+1120422]
+	Ordinal0 [0x0077A73D+960317]
+	Ordinal0 [0x0077B71F+964383]
+	GetHandleVerifier [0x00B5A2C2+2728322]
+	GetHandleVerifier [0x00B4C184+2670660]
+	GetHandleVerifier [0x0094102A+528106]
+	GetHandleVerifier [0x0093FE10+523472]
+	Ordinal0 [0x0085028C+1835660]
+	Ordinal0 [0x00854758+1853272]
+	Ordinal0 [0x00854845+1853509]
+	Ordinal0 [0x0085E7E4+1894372]
+	BaseThreadInitThunk [0x752E6739+25]
+	RtlGetFullPathName_UEx [0x77038FD2+1218]
+	RtlGetFullPathName_UEx [0x77038F9D+1165]
+
+
+jorge-gonzalez-806084 (0, '')
+
+braden-spano-806085 (0, '')
+
+naykel-cruz-806086 (0, '')
+
+aj-goytia-806087 (0, '')
+
+aj-gracia-806088 (0, '')
+

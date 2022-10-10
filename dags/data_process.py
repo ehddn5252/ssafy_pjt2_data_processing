@@ -355,7 +355,9 @@ def insert_scheduler():
             dml_instance.commit()
 
 
-def stack_schedules(dml_instance, year):
+def stack_schedules():
+    dml_instance = DML()
+    year = 2022
     val_list = []
     for year in range(year, year - 1, -1):
         print('year: ' + str(year))
