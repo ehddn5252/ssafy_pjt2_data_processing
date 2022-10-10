@@ -713,67 +713,73 @@ with DAG(**dag_args) as dag:
     # 1. 맨 처음 schedule 비워줌
 
     # 1. 새 schedules 쌓아주는 로직
+    
     _stack_schedules = PythonOperator(
         task_id='stack_schedules',
         python_callable=stack_schedules,
     )
-
+    
     # 2 schedule 로부터 game_raw_data 데이터 쌓기
     _stack_raw_data = PythonOperator(
         task_id='stack_raw_data',
         python_callable=stack_raw_data,
     )
-
+    
     # 3 raw_data 에서 events 데이터 쌓기
     _stack_event_table_from_raw_data = PythonOperator(
         task_id='stack_event_table',
         python_callable=stack_event_table_from_raw_data,
     )
+    
     # 4. event_pitchers table 만드는 sql
     _stack_event_players = PythonOperator(
         task_id='stack_event_players',
         python_callable=stack_event_players_from_events,
     )
-
+    
     # 5. event_pitchers 를 update 하기 위한 로직
     _update_event_pitchers = PythonOperator(
         task_id='update_event_pitchers',
         python_callable=update_event_pitchers,
     )
-
+    
     # 6. 이번년도 시즌의 투수 정보 삭제
     _remove_season_pitchers = PythonOperator(
         task_id='remove_season_pitchers',
-        python_callable=remove_season_pitchers(),
+        python_callable=remove_season_pitchers,
     )
-
+    
     # 7. pitchers 테이블 만드는 로직
     _stack_pitchers = PythonOperator(
         task_id='stack_pitchers',
         python_callable=stack_pitchers_from_event_pitchers,
     )
-
+    
     _update_pitcher_position = PythonOperator(
         task_id='update_pitcher_position',
         python_callable=update_pitcher_position,
     )
+    
     _stack_event_batters = PythonOperator(
         task_id='stack_event_batters',
         python_callable=stack_event_batters,
     )
+    
     _stack_batters = PythonOperator(
         task_id='stack_batters',
         python_callable=stack_batters,
     )
+    
     _remove_now_season_batters= PythonOperator(
         task_id='remove_season_batters',
         python_callable=remove_season_batters,
     )
-
+    
     _insert_into_event_batters_count = PythonOperator(
         task_id='insert_into_event_batters_count',
         python_callable=insert_into_event_batters_count,
     )
+    
 
     # now_date = PythonOperator(
     #     task_id='print_today',
@@ -792,5 +798,6 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
-    _truncate_all_table >> _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players >> _stack_event_batters >> _update_pitcher_position >> _remove_season_pitchers >> _stack_pitchers >> _insert_into_event_batters_count >> _remove_now_season_batters >> _stack_batters >> complete
-    # start >> now_date >> stack_schedules >> complete
+    _truncate_all_table >> _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data  >> _stack_event_players >> _stack_event_batters  >> _update_pitcher_position >> _remove_season_pitchers >> _stack_pitchers >> _insert_into_event_batters_count >> _remove_now_season_batters >> _stack_batters >> complete
+
+    # start # >> now_date >> stack_schedules >> complete
