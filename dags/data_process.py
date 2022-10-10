@@ -767,7 +767,7 @@ with DAG(**dag_args) as dag:
     complete = BashOperator(
         task_id='complete_bash',
         depends_on_past=False,
-        bash_command='echo "complete~!"',
+        bash_command='echo "complete data process!"',
         trigger_rule=TriggerRule.NONE_FAILED
     )
     # _stack_schedules >> _stack_raw_data >> _stack_event_table_from_raw_data >> _stack_event_players_from_events >> _update_pitcher_position >> _delete_pitchers_season_data >> _stack_pitchers_from_event_pitchers >> _update_pitcher_position >> complete
