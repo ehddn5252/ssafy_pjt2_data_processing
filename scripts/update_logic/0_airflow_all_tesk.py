@@ -19,7 +19,7 @@ SCHEDULES_TABLE = "new_new_new_schedules"
 EVENTS_TABLE = "new_new_new_events"
 EVENT_PITCHERS_TABLE = "new_new_new_event_pitchers"
 EVENT_BATTERS_TABLE = "new_new_new_event_batters"
-PITCHERS_TABLE = "new_new_new_pitchers"
+PITCHERS_TABLE = "new_new_pitchers"
 BATTERS_TABLE = "new_batters"
 EVENT_BATTER_COUNTS_TABLE = "new_new_new_event_batter_counts"
 BASEBALL_PLAYERS_TABLE = "baseball_players"
@@ -562,9 +562,9 @@ if __name__ == "__main__":
     # 맨 처음 테이블 생성
 
     # 새로 쌓는 db TRUNCATE TABLE
-    # ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
-    # ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
-    # ddl_instance.truncate_table(table_name=EVENT_BATTERS_TABLE)
+    ddl_instance.truncate_table(table_name=SCHEDULES_TABLE)
+    ddl_instance.truncate_table(table_name=EVENT_PITCHERS_TABLE)
+    ddl_instance.truncate_table(table_name=EVENT_BATTERS_TABLE)
     YEAR = 2022
 
     # 0. 시즌 정보 테이블 삭제
@@ -585,7 +585,7 @@ if __name__ == "__main__":
     ddl_instance.truncate_table(table_name=EVENTS_TABLE)
 
     # 4. raw_data 에서 events 데이터 쌓기
-    stack_event_table_from_raw_data(dml_instance)
+    #stack_event_table_from_raw_data(dml_instance)
     print("================3. stack_event_table_from_raw_data clear")
 
     # 5. event_pitchers table 만드는 sql
@@ -604,13 +604,13 @@ if __name__ == "__main__":
     stack_pitchers_from_event_pitchers(dml_instance)
     update_pitcher_position(dml_instance)
 
-    # event_batters_count 도 비워주고 다시 생성
+    # # event_batters_count 도 비워주고 다시 생성
     ddl_instance.truncate_table(table_name=EVENT_BATTER_COUNTS_TABLE)
     insert_into_event_batters_count(dml_instance)
 
     # 9. 이번년도 시즌의 타자 정보 삭제
     remove_season_batters(dml_instance, YEAR)
-
+    #
     # 10. batters 테이블 만드는 로직
     stack_batters(dml_instance)
     print("================6. stack_pitchers_from_event_pitchers")
